@@ -1,0 +1,206 @@
+using System;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
+
+public class Player : MonoBehaviour, ProjectActions.IOverworldActions
+{
+    ProjectActions input;
+    CharacterController cc;
+    Camera mainCam;
+    Animator anim;
+
+    [Header("Collision Mask")]
+    [SerializeField] private LayerMask collisionMask;
+    [SerializeField] private Transform raycastOriginPoint;
+
+    [Header("Movement Variables")]
+    [SerializeField] private float initSpeed = 5.0f;
+    [SerializeField] private float maxSpeed = 15.0f;
+    [SerializeField] private float moveAccel = 0.2f;
+    [SerializeField] private float rotationSpeed = 30.0f;
+    private float curSpeed = 5.0f;
+
+    [Header("Jump Variables")]
+    [SerializeField] private float jumpHeight = 0.1f;
+    [SerializeField] private float jumpTime = 0.7f;
+
+    //values clculated using jump height and jump time
+    private float timeToJumpApex; //jumpTime / 2
+    private float initJumpVelocity;
+
+    //character Movement
+    Vector2 direction;
+    Vector3 velocity;
+
+    public bool inView;
+
+    [SerializeField] private int maxLives = 3;
+    private int _lives = 3;
+    public int lives
+    {
+        get => _lives;
+        set
+        {
+            _lives = value;
+
+            if (value < 0) GameOver();
+
+            if (_lives > maxLives) _lives = maxLives; 
+        }
+
+    }
+   
+
+    //calculated based on our jump values - this is the Y velocity that we will apply
+    private float gravity;
+
+    private bool isJumpPressed = false;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if(lives == 0)
+        {
+            lives = 3;
+        }
+        anim = GetComponentInChildren<Animator>();
+        cc = GetComponent<CharacterController>();
+        mainCam = Camera.main;
+
+        timeToJumpApex = jumpTime / 2;
+        gravity = (-2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
+        initJumpVelocity = -(gravity * timeToJumpApex);
+    }
+
+    void OnEnable()
+    {
+        input = new ProjectActions();
+        input.Enable();
+        input.Overworld.SetCallbacks(this);
+    }
+    void OnDisable()
+    {
+        input.Disable();
+        input.Overworld.RemoveCallbacks(this);
+    }
+    #region Input Function
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        if (context.performed) direction = context.ReadValue<Vector2>();
+        if (context.canceled) direction = Vector2.zero;
+    }
+
+    public void OnJump(InputAction.CallbackContext context) => isJumpPressed = context.ReadValueAsButton();
+
+    #endregion
+   
+    void Update()
+    {
+        Vector2 groundVel = new Vector2(velocity.x, velocity.y);
+        anim.SetFloat("vel", groundVel.magnitude);
+
+        if (!raycastOriginPoint)
+            return;
+
+        Ray ray = new Ray(raycastOriginPoint.transform.position, transform.forward);
+        RaycastHit hitInfo;
+
+
+        Debug.DrawLine(raycastOriginPoint.transform.position, raycastOriginPoint.transform.position + (transform.forward * 10.0f), 
+            Color.red);
+
+        if (Physics.Raycast(ray, out hitInfo, 10.0f, collisionMask))
+        {
+            //if true hitInfo will have something to output
+            Debug.Log(hitInfo.transform.gameObject);
+            //make so just makes enemy visable/freeze
+            if (hitInfo.transform.CompareTag("enemy"))
+            {
+                inView = true;
+            }
+            else inView = false;
+
+        }
+        else inView = false;
+    }
+
+    void FixedUpdate()
+    {
+        Vector3 desiredMoveDirection = ProjectedMoveDirection();
+        cc.Move(UpdateCharacterVelocity(desiredMoveDirection));
+
+        //rotate towards direction of movement
+        if (direction.magnitude > 0)
+        {
+            float timeStep = rotationSpeed * Time.fixedDeltaTime;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(desiredMoveDirection), timeStep);
+        }
+    }
+    private Vector3 ProjectedMoveDirection()
+    {
+       //grab our fwd and right vectors for camera relative movement 
+       Vector3 camreaRight = mainCam.transform.right;
+       Vector3 camreaForward = mainCam.transform.forward;
+
+        //remove yaw rotation
+        camreaForward.y = 0;
+        camreaRight.y = 0;
+
+        camreaForward.Normalize();
+        camreaRight.Normalize();
+
+        return camreaForward * direction.y + camreaRight * direction.x;
+    }
+
+    private Vector3 UpdateCharacterVelocity(Vector3 desiredDirection)
+    {
+        if (direction == Vector2.zero) curSpeed = initSpeed;
+
+        velocity.x = desiredDirection.x * curSpeed;
+        velocity.z = desiredDirection.z * curSpeed;
+
+        curSpeed += moveAccel * Time.fixedDeltaTime;
+        curSpeed = Mathf.Clamp(curSpeed, initSpeed, maxSpeed);
+
+        if (!cc.isGrounded) velocity.y += gravity * Time.fixedDeltaTime;
+        else velocity.y = CheckJump();
+        
+        return velocity;
+    }
+
+    private float CheckJump()
+    {
+        if (isJumpPressed) return initJumpVelocity;
+        else return -cc.minMoveDistance;
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+      
+        if (hit.gameObject.CompareTag("endPoint"))
+        {
+            QuitGame();
+        }
+        Debug.Log(hit.gameObject);
+    }
+
+    void GameOver()
+    {
+        if(lives <= 0)
+        {
+            QuitGame();
+        }
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+    }
+   
+}
