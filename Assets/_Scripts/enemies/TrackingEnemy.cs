@@ -11,20 +11,22 @@ public class TrackingEnemy : Enemy
     public GameObject enemyBullet;
     public Transform spawnPoint;
 
-    private Renderer rend;
     private Rigidbody rb;
-   
+    Animator anim;
+
     private Player player;
 
     private bool visable;
 
     private Transform playerLoction;
 
+    private bool moving;
+
     //loads before start
     private void Awake() //less costly to load here instad of start
     {
         rb = GetComponent<Rigidbody>();
-        rend = GetComponent<Renderer>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,6 +42,9 @@ public class TrackingEnemy : Enemy
     // Update is called once per frame
     void Update()
     {
+
+        anim.SetBool("moving", moving);
+        
         transform.LookAt(playerLoction);
 
         Sneek();
@@ -53,20 +58,24 @@ public class TrackingEnemy : Enemy
             {
                 visable = true;
             }
+
             else visable = false;
 
             if (!visable)
             {
+                Debug.Log("not visable");
                 eSpeed = 10.0f;
                 transform.position = Vector3.MoveTowards(transform.position, playerLoction.position, eSpeed * Time.deltaTime);
                 ShootAtPlayer();
-
+                moving = true;
             }
             else if (visable)
             {
-                eSpeed = 0;
+                Debug.Log("visable");
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
                 rb.constraints = RigidbodyConstraints.FreezeAll;
-
+                moving = false;
             }
         }
     }
