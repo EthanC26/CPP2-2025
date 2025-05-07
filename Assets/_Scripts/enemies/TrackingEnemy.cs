@@ -6,14 +6,16 @@ public class TrackingEnemy : Enemy
     [SerializeField] float eSpeed = 4;
 
     [SerializeField] private float timer = 5;
+
+    [SerializeField, Range(1, 20)] private int damage = 20;
+
     private float bulletTime;
     public float bulletspeed = 20;
     public GameObject enemyBullet;
     public Transform spawnPoint;
 
     private Rigidbody rb;
-    Animator anim;
-
+   
     private Player player;
 
     private bool visable;
@@ -21,6 +23,7 @@ public class TrackingEnemy : Enemy
     private Transform playerLoction;
 
     private bool moving;
+
 
     //loads before start
     private void Awake() //less costly to load here instad of start
@@ -91,5 +94,16 @@ public class TrackingEnemy : Enemy
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.AddForce(bulletRig.transform.forward * bulletspeed);
         
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            eSpeed = 0;
+            anim.SetTrigger("hit");
+        }
+
+        else 
+            eSpeed = 5;
     }
 }

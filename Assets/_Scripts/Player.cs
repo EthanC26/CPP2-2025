@@ -45,7 +45,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     public bool inView;
 
-    private bool dead = false;
+   
 
     [SerializeField] private int maxLives = 3;
     private int _lives = 3;
@@ -57,11 +57,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             _lives = value;
 
             if (value < 0)
-            {
-                dead = true;
-                
-                GameOver();
-            }
+                    GameOver();
+               
+            
             if (_lives > maxLives) _lives = maxLives; 
         }
 
@@ -134,11 +132,18 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         }
     }
 
+    public void OnShoot(InputAction.CallbackContext context)
+    {
+      
+            elapsedTime = 0;
+       
+    }
+
     #endregion
 
     void Update()
     {
-        anim.SetBool("dead", dead);
+        
         anim.SetBool("unarmedAttack", uAttack);
         anim.SetBool("Attack", attack);
 

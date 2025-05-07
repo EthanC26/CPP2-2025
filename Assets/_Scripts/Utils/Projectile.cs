@@ -11,12 +11,12 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
-    private void SetVelocity(Vector3 velocity)
+    public void SetVelocity(Vector3 velocity)
     {
         GetComponent<Rigidbody>().linearVelocity = velocity;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (gameObject.CompareTag("pProj"))
         {

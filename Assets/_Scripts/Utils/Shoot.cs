@@ -19,11 +19,14 @@ public class Shoot : MonoBehaviour
             Debug.Log("Init shot velocity has been changed to default");
             initShotVelocity.x = 7.0f;
         }
+        if (!spawnPoint)
+            Debug.Log($"please put on {gameObject.name}");
     }
 
     public void Fire()
     {
         Projectile curProjectile;
-        curProjectile = Instantiate(projectilePrefab,spawnPoint.position, spawnPoint.rotation);
+        curProjectile = Instantiate(projectilePrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        curProjectile.SetVelocity (initShotVelocity);
     }
 }

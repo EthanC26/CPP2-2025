@@ -62,6 +62,15 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shoot"",
+                    ""type"": ""Button"",
+                    ""id"": ""836ec9c2-3942-4596-94d0-28810506bc87"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -218,6 +227,17 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""80508f1a-4c2c-439f-8ac3-9fc0b6a21c0f"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shoot"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -230,6 +250,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
         m_Overworld_Jump = m_Overworld.FindAction("Jump", throwIfNotFound: true);
         m_Overworld_Drop = m_Overworld.FindAction("Drop", throwIfNotFound: true);
         m_Overworld_Attack = m_Overworld.FindAction("Attack", throwIfNotFound: true);
+        m_Overworld_Shoot = m_Overworld.FindAction("Shoot", throwIfNotFound: true);
     }
 
     ~@ProjectActions()
@@ -300,6 +321,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Overworld_Jump;
     private readonly InputAction m_Overworld_Drop;
     private readonly InputAction m_Overworld_Attack;
+    private readonly InputAction m_Overworld_Shoot;
     public struct OverworldActions
     {
         private @ProjectActions m_Wrapper;
@@ -308,6 +330,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Overworld_Jump;
         public InputAction @Drop => m_Wrapper.m_Overworld_Drop;
         public InputAction @Attack => m_Wrapper.m_Overworld_Attack;
+        public InputAction @Shoot => m_Wrapper.m_Overworld_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_Overworld; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -329,6 +352,9 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
             @Attack.started += instance.OnAttack;
             @Attack.performed += instance.OnAttack;
             @Attack.canceled += instance.OnAttack;
+            @Shoot.started += instance.OnShoot;
+            @Shoot.performed += instance.OnShoot;
+            @Shoot.canceled += instance.OnShoot;
         }
 
         private void UnregisterCallbacks(IOverworldActions instance)
@@ -345,6 +371,9 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
             @Attack.started -= instance.OnAttack;
             @Attack.performed -= instance.OnAttack;
             @Attack.canceled -= instance.OnAttack;
+            @Shoot.started -= instance.OnShoot;
+            @Shoot.performed -= instance.OnShoot;
+            @Shoot.canceled -= instance.OnShoot;
         }
 
         public void RemoveCallbacks(IOverworldActions instance)
@@ -368,5 +397,6 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnDrop(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnShoot(InputAction.CallbackContext context);
     }
 }

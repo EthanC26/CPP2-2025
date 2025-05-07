@@ -11,6 +11,7 @@ TagManager:
   - eProj
   - pProj
   - weapon
+  - ground
   layers:
   - Default
   - TransparentFX
