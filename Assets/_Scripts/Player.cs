@@ -35,6 +35,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     [SerializeField] private Transform weaponAttachPoint;
     Weapon weapon = null;
 
+    //attack vaiables
+    private bool uAttack = false;
+    private bool attack = false;
 
     //character Movement
     Vector2 direction;
@@ -63,6 +66,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     private float gravity;
 
     private bool isJumpPressed = false;
+
+    private float elapsedTime;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -108,12 +113,30 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             weapon = null;
         }
     }
+    public void OnAttack(InputAction.CallbackContext context)
+    {
+        Debug.Log($"attacking");
+        if (weapon)
+        {
+            attack = true;
+            elapsedTime = 0;
+        }
+        else
+        {
+            uAttack = true;
+            elapsedTime = 0;
+        }
+    }
 
     #endregion
-   
+
     void Update()
     {
-        Vector2 groundVel = new Vector2(velocity.x, velocity.y);
+        
+        anim.SetBool("unarmedAttack", uAttack);
+        anim.SetBool("Attack", attack);
+
+        Vector2 groundVel = new Vector2(velocity.x, velocity.z);
         anim.SetFloat("vel", groundVel.magnitude);
 
         if (!raycastOriginPoint)
@@ -123,7 +146,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         RaycastHit hitInfo;
 
 
-        Debug.DrawLine(raycastOriginPoint.transform.position, raycastOriginPoint.transform.position + (transform.forward * 10.0f), 
+        Debug.DrawLine(raycastOriginPoint.transform.position, raycastOriginPoint.transform.position + (transform.forward * 10.0f),
             Color.red);
 
         if (Physics.Raycast(ray, out hitInfo, 10.0f, collisionMask))
@@ -139,6 +162,13 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
         }
         else inView = false;
+
+        if (elapsedTime >= 0.5)
+        {
+            uAttack = false;
+            attack = false;
+        }
+        elapsedTime += Time.deltaTime;
     }
 
     void FixedUpdate()

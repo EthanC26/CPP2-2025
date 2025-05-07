@@ -53,6 +53,15 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""285c8d9a-7367-40bd-8bb1-a7ad1e8cfb73"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -198,6 +207,17 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
                     ""action"": ""Drop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd8cd1c1-080b-464a-afb5-3d58c8eeead0"",
+                    ""path"": ""<Keyboard>/leftCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -209,6 +229,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
         m_Overworld_Move = m_Overworld.FindAction("Move", throwIfNotFound: true);
         m_Overworld_Jump = m_Overworld.FindAction("Jump", throwIfNotFound: true);
         m_Overworld_Drop = m_Overworld.FindAction("Drop", throwIfNotFound: true);
+        m_Overworld_Attack = m_Overworld.FindAction("Attack", throwIfNotFound: true);
     }
 
     ~@ProjectActions()
@@ -278,6 +299,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Overworld_Move;
     private readonly InputAction m_Overworld_Jump;
     private readonly InputAction m_Overworld_Drop;
+    private readonly InputAction m_Overworld_Attack;
     public struct OverworldActions
     {
         private @ProjectActions m_Wrapper;
@@ -285,6 +307,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_Overworld_Move;
         public InputAction @Jump => m_Wrapper.m_Overworld_Jump;
         public InputAction @Drop => m_Wrapper.m_Overworld_Drop;
+        public InputAction @Attack => m_Wrapper.m_Overworld_Attack;
         public InputActionMap Get() { return m_Wrapper.m_Overworld; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -303,6 +326,9 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
             @Drop.started += instance.OnDrop;
             @Drop.performed += instance.OnDrop;
             @Drop.canceled += instance.OnDrop;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
         }
 
         private void UnregisterCallbacks(IOverworldActions instance)
@@ -316,6 +342,9 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
             @Drop.started -= instance.OnDrop;
             @Drop.performed -= instance.OnDrop;
             @Drop.canceled -= instance.OnDrop;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
         }
 
         public void RemoveCallbacks(IOverworldActions instance)
@@ -338,5 +367,6 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnDrop(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
     }
 }

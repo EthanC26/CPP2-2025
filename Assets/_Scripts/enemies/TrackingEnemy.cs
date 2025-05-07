@@ -57,15 +57,13 @@ public class TrackingEnemy : Enemy
 
             if (!visable)
             {
-                rend.enabled = true;
-                eSpeed = 4.0f;
+                eSpeed = 10.0f;
                 transform.position = Vector3.MoveTowards(transform.position, playerLoction.position, eSpeed * Time.deltaTime);
                 ShootAtPlayer();
 
             }
             else if (visable)
             {
-                rend.enabled = false;
                 eSpeed = 0;
                 rb.constraints = RigidbodyConstraints.FreezeAll;
 
