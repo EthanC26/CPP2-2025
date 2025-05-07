@@ -30,6 +30,12 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     private float timeToJumpApex; //jumpTime / 2
     private float initJumpVelocity;
 
+    //weapon variables
+    [Header("Weapon Variables")]
+    [SerializeField] private Transform weaponAttachPoint;
+    Weapon weapon = null;
+
+
     //character Movement
     Vector2 direction;
     Vector3 velocity;
@@ -86,13 +92,22 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         input.Overworld.RemoveCallbacks(this);
     }
     #region Input Function
+    public void OnJump(InputAction.CallbackContext context) => isJumpPressed = context.ReadValueAsButton();
+
     public void OnMove(InputAction.CallbackContext context)
     {
         if (context.performed) direction = context.ReadValue<Vector2>();
         if (context.canceled) direction = Vector2.zero;
     }
 
-    public void OnJump(InputAction.CallbackContext context) => isJumpPressed = context.ReadValueAsButton();
+    public void OnDrop(InputAction.CallbackContext context)
+    {
+        if(weapon)
+        {
+            weapon.Drop(GetComponent<Collider>(), transform.forward);
+            weapon = null;
+        }
+    }
 
     #endregion
    
@@ -178,6 +193,11 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        if (hit.collider.CompareTag("weapon") && weapon == null)
+        {
+            weapon = hit.gameObject.GetComponent<Weapon>();
+            weapon.Equip(GetComponent<Collider>(), weaponAttachPoint);
+        }
       
         if (hit.gameObject.CompareTag("endPoint"))
         {

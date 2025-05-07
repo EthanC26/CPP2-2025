@@ -67,6 +67,7 @@
     <Compile Include="Assets\_Scripts\Input\ProjectActions.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\enemies\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Singleton.cs" />
     <Compile Include="Assets\_Scripts\Utils\Projectile.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />

@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\school\\GitHub\\CPP2-2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +34,41 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Singleton.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Singleton.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Singleton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T02:07:52.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Player.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Player.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAgwGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAAcwMMAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T04:40:09.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Weapon.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Weapon.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Weapon.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA+wCgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T02:06:33.935Z",
               "EditorCaption": ""
             }
           ]
