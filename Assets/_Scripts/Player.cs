@@ -245,6 +245,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             QuitGame();
         }
         Debug.Log(hit.gameObject);
+
     }
 
     void GameOver()

@@ -12,6 +12,7 @@ TagManager:
   - pProj
   - weapon
   - ground
+  - AttackTrigger
   layers:
   - Default
   - TransparentFX

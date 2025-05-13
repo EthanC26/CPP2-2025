@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
 internal class Weapon : MonoBehaviour
 {
+
     Rigidbody rb;
     BoxCollider bc;
 
@@ -40,4 +41,6 @@ internal class Weapon : MonoBehaviour
         //enable collsions
         Physics.IgnoreCollision(playerCollider,bc,false);
     }
+
+
 }

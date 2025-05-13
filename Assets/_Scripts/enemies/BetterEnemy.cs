@@ -2,9 +2,11 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent (typeof(NavMeshAgent))]
-public class BetterEnemy : MonoBehaviour
+public class BetterEnemy : Enemy
 {
-   public enum EnemyState
+    [SerializeField, Range(1, 20)] private int damage = 20;
+
+    public enum EnemyState
     {
         chase, Patrol
     }
@@ -19,7 +21,7 @@ public class BetterEnemy : MonoBehaviour
     public int pathIndex = 1;
     public float distThreshold = 0.2f; // floating point math is inexact, this allows us to get close enough to the waypoint and move to the next one.
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected override void Start()
     {
         agent = GetComponent<NavMeshAgent>();
 
