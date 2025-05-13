@@ -1358,6 +1358,10 @@
       <Project>{3371922A-6D85-0094-2154-64581B7A1F04}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="CatSplatStudios.StateMachine.csproj">
+      <Project>{F64D13B0-11A5-66DC-DD98-543C64588F7F}</Project>
+      <Name>CatSplatStudios.StateMachine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

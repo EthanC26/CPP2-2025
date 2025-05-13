@@ -67,6 +67,7 @@
     <Compile Include="Assets\_Scripts\Input\ProjectActions.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\enemies\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\enemies\EnemyStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Singleton.cs" />
     <Compile Include="Assets\_Scripts\Utils\Projectile.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\_Scripts\Player.cs" />
     <Compile Include="Assets\_Scripts\Pickups\randomPickup.cs" />
     <Compile Include="Assets\_Scripts\Pickups\IPickup.cs" />
+    <Compile Include="Assets\_Scripts\enemies\EnemyContex.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TerrainSampleAssets\ThirdPartyNotices.txt" />
@@ -1305,6 +1307,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="CatSplatStudios.StateMachine.csproj">
+      <Project>{F64D13B0-11A5-66DC-DD98-543C64588F7F}</Project>
+      <Name>CatSplatStudios.StateMachine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

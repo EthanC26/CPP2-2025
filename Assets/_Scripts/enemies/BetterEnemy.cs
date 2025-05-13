@@ -22,12 +22,14 @@ public class BetterEnemy : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+
+        target = path.Length > 0 ? path[0] : player ? player.transform : null;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!player) return;
+        if (!target) return;
 
         if (currentState == EnemyState.chase) target = player;
 
