@@ -13,6 +13,7 @@ TagManager:
   - weapon
   - ground
   - AttackTrigger
+  - Powerup
   layers:
   - Default
   - TransparentFX

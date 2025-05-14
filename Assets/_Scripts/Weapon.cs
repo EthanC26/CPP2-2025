@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody), typeof(BoxCollider))]
 internal class Weapon : MonoBehaviour
 {
+    
 
     Rigidbody rb;
     BoxCollider bc;
@@ -16,7 +17,7 @@ internal class Weapon : MonoBehaviour
 
     public void Equip(Collider playerCollider, Transform weaponAttachPoint)
     {
-        //setting our rb to kinematic because we dont want to move via ohysics anymore
+        //setting our rb to kinematic because we dont want to move via physics anymore
         rb.isKinematic = true;
         //setting our bc to be a trigger so we are not blocked by the sword collision
         bc.isTrigger = true;
@@ -39,8 +40,7 @@ internal class Weapon : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         //enable collsions
-        Physics.IgnoreCollision(playerCollider,bc,false);
+        Physics.IgnoreCollision(playerCollider, bc, false);
     }
-
-
+    
 }

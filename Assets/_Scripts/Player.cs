@@ -26,6 +26,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     [SerializeField] private float jumpHeight = 0.1f;
     [SerializeField] private float jumpTime = 0.7f;
 
+    public GameObject[] attackPrefab;
+
     //values clculated using jump height and jump time
     private float timeToJumpApex; //jumpTime / 2
     private float initJumpVelocity;
@@ -36,8 +38,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     Weapon weapon = null;
 
     //attack vaiables
-    private bool uAttack = false;
-    private bool attack = false;
+    public bool uAttack = false;
+    public bool attack = false;
+    public bool hasHit = false;
 
     //character Movement
     Vector2 direction;
@@ -123,6 +126,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         if (weapon)
         {
             attack = true;
+            hasHit = false;
             elapsedTime = 0;
         }
         else
@@ -245,6 +249,12 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             QuitGame();
         }
         Debug.Log(hit.gameObject);
+
+        if(hit.gameObject.CompareTag("Powerup"))
+        {
+            Destroy(hit.gameObject);
+            Debug.Log("PowerUp Hit!!");
+        }
 
     }
 

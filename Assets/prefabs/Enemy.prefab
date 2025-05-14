@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 3602884770018552718}
   - component: {fileID: -7787211440420202316}
   - component: {fileID: 2357151359868573603}
+  - component: {fileID: 7908437983667636988}
+  - component: {fileID: 6306191235775412456}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: enemy
@@ -154,8 +156,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477c65deb4fda154c9ec8ed09890eae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  curHealth: 0
+  maxHealth: 5
+  baseHealth: 0
+  powerUp: {fileID: 5056787398594155144, guid: f4d576675b261004c933941aa40c0899, type: 3}
+  spawnOffSet: {x: 0, y: 1, z: 0}
   player: {fileID: 0}
-  currentState: 1
+  currentState: 0
   path:
   - {fileID: 0}
   - {fileID: 0}
@@ -165,6 +172,56 @@ MonoBehaviour:
   - {fileID: 1068792047845766788}
   pathIndex: 0
   distThreshold: 0.02
+--- !u!136 &7908437983667636988
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719350945500752512}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6306191235775412456
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7719350945500752512}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &4392880478367549568
 PrefabInstance:
   m_ObjectHideFlags: 0

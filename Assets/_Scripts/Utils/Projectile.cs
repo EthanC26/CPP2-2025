@@ -5,6 +5,7 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField, Range(1, 20)] private float lifeTime = 1.0f;
     [SerializeField, Range(1, 20)] private int damage = 20;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
