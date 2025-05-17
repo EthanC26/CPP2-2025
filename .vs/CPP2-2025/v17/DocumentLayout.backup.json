@@ -3,11 +3,43 @@
   "WorkspaceRootPath": "C:\\school\\GitHub\\CPP2-2025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\menus\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\menus\\victorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\victorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\gameovermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\gameovermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\creditsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\creditsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\basemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\basemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,60 +82,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BetterEnemy.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAowEMAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T01:36:25.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Player.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Player.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAADwv4EAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T04:40:09.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Singleton.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Singleton.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Singleton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:07:52.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Shoot.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Shoot.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Utils\\Shoot.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T22:05:31.682Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -114,7 +94,153 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\PauseMenu.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\PauseMenu.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T06:02:30.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VictoryMenu.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\VictoryMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\VictoryMenu.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\VictoryMenu.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\VictoryMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:44:57.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameOverMenu.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\GameOverMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\GameOverMenu.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\GameOverMenu.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\GameOverMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:44:54.373Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CreditsMenu.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\CreditsMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\CreditsMenu.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\CreditsMenu.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\CreditsMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:33:38.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\MainMenu.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:26:57.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\MenuController.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MenuController.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\MenuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:15:56.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseMenu.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\BaseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\BaseMenu.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\BaseMenu.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Menus\\BaseMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:08:34.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RotatePond.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Misc\\RotatePond.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Misc\\RotatePond.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Misc\\RotatePond.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Misc\\RotatePond.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T03:46:38.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BetterEnemy.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowEMAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T01:36:25.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Player.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Player.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAADwv4EAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T04:40:09.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Singleton.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Singleton.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Singleton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T02:07:52.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Shoot.cs",
+              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Shoot.cs",
+              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Utils\\Shoot.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T22:05:31.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "randomPickup.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Pickups\\randomPickup.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Pickups\\randomPickup.cs",
@@ -122,12 +248,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\Pickups\\randomPickup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T02:54:31.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T02:54:31.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "EnemyContex.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\EnemyContex.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\EnemyContex.cs",
@@ -135,12 +260,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\EnemyContex.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:49:14.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T03:49:14.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "EnemyStateMachine.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
@@ -148,12 +272,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:49:11.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T03:49:11.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\Enemy.cs",
@@ -161,12 +284,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\Enemy.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T05:48:04.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T05:48:04.097Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Projectile.cs",
@@ -174,12 +296,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\Utils\\Projectile.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T21:11:56.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T21:11:56.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Weapon.cs",
@@ -187,8 +308,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Weapon.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:06:33.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:06:33.935Z"
             }
           ]
         }
