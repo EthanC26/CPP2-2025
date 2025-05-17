@@ -64,6 +64,7 @@
     <Compile Include="Assets\_Scripts\Utils\Shoot.cs" />
     <Compile Include="Assets\_Scripts\Utils\BootStrapper.cs" />
     <Compile Include="Assets\_Scripts\Input\ProjectActions.cs" />
+    <Compile Include="Assets\_Scripts\Misc\RotatePond.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\enemies\Enemy.cs" />
     <Compile Include="Assets\_Scripts\enemies\EnemyStateMachine.cs" />
