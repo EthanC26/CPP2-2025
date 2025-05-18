@@ -32,7 +32,7 @@ public class Projectile : MonoBehaviour
         {
          
             Player player = collision.gameObject.GetComponent<Player>();
-            player.lives--;
+            //player.lives--;
             Debug.Log("hit");
             Destroy(gameObject);
 

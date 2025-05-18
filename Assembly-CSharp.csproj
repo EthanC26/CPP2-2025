@@ -71,9 +71,11 @@
     <Compile Include="Assets\_Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\_Scripts\enemies\EnemyStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Menus\VictoryMenu.cs" />
+    <Compile Include="Assets\_Scripts\GameManager.cs" />
     <Compile Include="Assets\_Scripts\Menus\CreditsMenu.cs" />
     <Compile Include="Assets\_Scripts\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Menus\BaseMenu.cs" />
+    <Compile Include="Assets\_Scripts\Menus\InGame.cs" />
     <Compile Include="Assets\_Scripts\Singleton.cs" />
     <Compile Include="Assets\_Scripts\Utils\Projectile.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />

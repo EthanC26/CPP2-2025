@@ -18,7 +18,7 @@ public class EnemyStateMachine : StateMachine<EnemyContex>
             maxHealth = 100,
             agent = GetComponent<NavMeshAgent>()
         };
-
+        
         StateBuilder<EnemyContex> stateBuilder = new StateBuilder<EnemyContex>();
 
         idelState = stateBuilder
@@ -47,6 +47,7 @@ public class EnemyStateMachine : StateMachine<EnemyContex>
 
 
         StateMachineRegistry.RegisterStateMachine(this, "EnemyStateMachine");
+        
     }
 
     bool idelToPatrolFunction()

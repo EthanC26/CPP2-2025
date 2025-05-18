@@ -32,6 +32,8 @@ public class MenuController : MonoBehaviour
         }
         SetActiveState(initState);
 
+        GameManager.Instance.SetMenuController(this);
+
     }
 
    public void JumpBack()

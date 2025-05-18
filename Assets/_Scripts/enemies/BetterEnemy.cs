@@ -21,6 +21,7 @@ public class BetterEnemy : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
+    Animator anim;
 
     public Transform[] path;
     public int pathIndex = 1;
@@ -29,6 +30,7 @@ public class BetterEnemy : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponentInChildren<Animator>();
 
         baseHealth = 5;
         maxHealth = 10;
@@ -42,10 +44,19 @@ public class BetterEnemy : MonoBehaviour
     {
         if (!target) return;
 
-        if (currentState == EnemyState.chase) target = player;
+        if (currentState == EnemyState.chase)
+        {
+            anim.SetBool("Chase", true);
+            anim.SetBool("Patrol", false);
+
+            target = player;
+        }
 
         if (currentState == EnemyState.Patrol)
         {
+            anim.SetBool("Patrol", true);
+            anim.SetBool("Chase", false);
+
             if (target == player) target = path[pathIndex];
 
             if(agent.remainingDistance < distThreshold)
@@ -69,6 +80,11 @@ public class BetterEnemy : MonoBehaviour
         {
             DamageTaken();
             _player.hasHit = true;
+        }
+        if(other.gameObject.CompareTag("player"))
+        {
+            GameManager.Instance.Lives--;
+
         }
 
     }

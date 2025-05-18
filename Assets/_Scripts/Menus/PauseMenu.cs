@@ -14,7 +14,7 @@ public class PauseMenu : BaseMenu
 
         quitBtn.onClick.AddListener(context.QuitGame);
         resumeBtn.onClick.AddListener(context.JumpBack);
-        mainMenuBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("TitleScreen"));
+        mainMenuBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("Title"));
     }
 
     public override void EnterState()

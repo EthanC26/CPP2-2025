@@ -50,23 +50,23 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
    
 
-    [SerializeField] private int maxLives = 3;
-    private int _lives = 3;
-    public int lives
-    {
-        get => _lives;
-        set
-        {
-            _lives = value;
+    //[SerializeField] private int maxLives = 3;
+    //private int _lives = 3;
+    //public int lives
+    //{
+    //    get => _lives;
+    //    set
+    //    {
+    //        _lives = value;
 
-            if (value < 0)
-                    GameOver();
+    //        if (value < 0)
+    //                GameOver();
                
             
-            if (_lives > maxLives) _lives = maxLives; 
-        }
+    //        if (_lives > maxLives) _lives = maxLives; 
+    //    }
 
-    }
+    //}
    
 
     //calculated based on our jump values - this is the Y velocity that we will apply
@@ -79,10 +79,10 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(lives == 0)
-        {
-            lives = 3;
-        }
+        //if(lives == 0)
+        //{
+        //    lives = 3;
+        //}
         anim = GetComponentInChildren<Animator>();
         cc = GetComponent<CharacterController>();
         mainCam = Camera.main;
@@ -258,13 +258,13 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     }
 
-    void GameOver()
-    {
-        if(lives <= 0)
-        {
-            QuitGame();
-        }
-    }
+    //void GameOver()
+    //{
+    //    if(lives <= 0)
+    //    {
+    //        QuitGame();
+    //    }
+    //}
 
     public void QuitGame()
     {
