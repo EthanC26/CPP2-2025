@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +13,7 @@ public class GameManager : MonoBehaviour
     #region Game Properties
     [SerializeField] private int MaxLives = 10;
     private int _lives = 3;
+   
     
     public int Lives
     {
@@ -34,6 +34,16 @@ public class GameManager : MonoBehaviour
             OnLifeValueChanged?.Invoke(_lives);
 
             Debug.Log($"{gameObject.name} lives: {_lives}");
+
+            //if (_lives > value)
+            //{
+            //    Animator playeranim = _playerInstance.GetComponent<Animator>();
+
+            //    if(playeranim != null)
+            //    {
+            //        playeranim.SetTrigger("Hit");
+            //    }
+            //}
 
         }
     }
@@ -82,6 +92,9 @@ public class GameManager : MonoBehaviour
             string sceneName_ = (SceneManager.GetActiveScene().name.Contains("GameOver")) ? "Title" : "GameOver";
             SceneManager.LoadScene(sceneName_);
 
+            string scenename = (SceneManager.GetActiveScene().name.Contains("Victory")) ? "Title" : "Victory";
+            SceneManager.LoadScene(sceneName_);
+
             string _sceneName = (SceneManager.GetActiveScene().name.Contains("Title")) ? "Game" : "Title";
             SceneManager.LoadScene(_sceneName);
 
@@ -102,6 +115,8 @@ public class GameManager : MonoBehaviour
     {
         if(Lives <= 0)
         {
+           
+            
             string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "GameOver" : "Game";
             SceneManager.LoadScene(sceneName);
 
@@ -114,6 +129,7 @@ public class GameManager : MonoBehaviour
         Lives = 3;
     }
 
+ 
     //void Respawn()
     //{
     //    _playerInstance.transform.position = currentCheckpoint.position;

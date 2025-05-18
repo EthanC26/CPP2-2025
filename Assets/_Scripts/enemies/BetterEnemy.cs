@@ -111,7 +111,16 @@ public class BetterEnemy : MonoBehaviour
         if(other.gameObject.CompareTag("player"))
         {
             GameManager.Instance.Lives--;
-            
+
+            //this is using the player object Animator
+            Animator playeranim = _player.GetComponentInChildren<Animator>();
+            if (playeranim != null)
+            {
+                Debug.Log("Player Hit");
+                playeranim.SetTrigger("Hit");
+            }
+
+            else Debug.Log("Player Hit - No Animator");
         }
 
     }

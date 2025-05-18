@@ -162,6 +162,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             attack = false;
         }
         elapsedTime += Time.deltaTime;
+
+       
     }
 
     void FixedUpdate()
@@ -210,8 +212,16 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     private float CheckJump()
     {
-        if (isJumpPressed) return initJumpVelocity;
+        anim.SetBool("Jumping", isJumpPressed);
+
+        if (isJumpPressed)
+        {
+            
+            return initJumpVelocity;
+
+        }
         else return -cc.minMoveDistance;
+        
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -243,16 +253,6 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         //    anim.SetTrigger("Hit");
         //}
 
-    }
-
-   
-    public void QuitGame()
-    {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-            Application.Quit();
-#endif
     }
    
 }
