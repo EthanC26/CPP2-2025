@@ -32338,7 +32338,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 38, w: 0}
+  m_margin: {x: -57.070312, y: 0, z: 38, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -47822,6 +47822,10 @@ PrefabInstance:
       propertyPath: 'path.Array.data[4]'
       value: 
       objectReference: {fileID: 217268534}
+    - target: {fileID: 3474470301404083665, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3602884770018552718, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
       propertyPath: m_Enabled
       value: 0

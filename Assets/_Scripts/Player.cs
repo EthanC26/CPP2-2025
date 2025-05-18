@@ -2,6 +2,7 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour, ProjectActions.IOverworldActions
@@ -127,9 +128,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         anim.SetBool("unarmedAttack", uAttack);
         anim.SetBool("Attack", attack);
 
-        if(!cc.isGrounded)
-            anim.SetBool("isGrounded", false);
-        else anim.SetBool("isGrounded", true);
+       
         Vector2 groundVel = new Vector2(velocity.x, velocity.z);
         anim.SetFloat("vel", groundVel.magnitude);
 
@@ -225,7 +224,10 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
       
         if (hit.gameObject.CompareTag("endPoint"))
         {
-            QuitGame();
+            string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "Victory" : "Game";
+            SceneManager.LoadScene(sceneName);
+            
+            Debug.Log("YOU WIN!!!");
         }
         Debug.Log(hit.gameObject);
 
@@ -234,6 +236,12 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             Destroy(hit.gameObject);
             Debug.Log("PowerUp Hit!!");
         }
+
+        //if(hit.gameObject.CompareTag("enemy"))
+        //{
+        //    Debug.Log("Enemy Hit!!");
+        //    anim.SetTrigger("Hit");
+        //}
 
     }
 

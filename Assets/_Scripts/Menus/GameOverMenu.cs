@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -5,8 +6,8 @@ using UnityEngine.UI;
 public class GameOverMenu : BaseMenu
 {
     public Button MainMenuBtn;
-    public Button CreditsBtn;
     public Button QuitBtn;
+    public TMP_Text GameoverText;
 
     public override void Init(MenuController contex)
     {
@@ -14,7 +15,6 @@ public class GameOverMenu : BaseMenu
         state = MenuStates.GameOver;
 
        if(MainMenuBtn) MainMenuBtn.onClick.AddListener(() => SceneManager.LoadScene("Title"));
-       if(CreditsBtn) CreditsBtn.onClick.AddListener(() => SetNextMenu(MenuStates.Credits));
         QuitBtn.onClick.AddListener(contex.QuitGame);
     }
 }

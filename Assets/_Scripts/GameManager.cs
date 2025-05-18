@@ -105,7 +105,10 @@ public class GameManager : MonoBehaviour
             string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "GameOver" : "Game";
             SceneManager.LoadScene(sceneName);
 
-            Debug.Log("Game Over gose here :(");
+            if (CurrentMenuController.CurrentState.state == MenuStates.InGame)
+                CurrentMenuController.SetActiveState(MenuStates.GameOver);
+            else
+                CurrentMenuController.JumpBack();
         }
 
         Lives = 3;
