@@ -28,6 +28,7 @@ public class RotatePond : MonoBehaviour
         {
             Debug.Log("Player entered the pond area");
             //Add any additional logic for when the player enters the pond area
+            GameManager.Instance.Lives++;
             impulseSource.GenerateImpulse(2.0f); 
         }
         

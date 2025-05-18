@@ -35,15 +35,6 @@ public class GameManager : MonoBehaviour
 
             Debug.Log($"{gameObject.name} lives: {_lives}");
 
-            //if (_lives > value)
-            //{
-            //    Animator playeranim = _playerInstance.GetComponent<Animator>();
-
-            //    if(playeranim != null)
-            //    {
-            //        playeranim.SetTrigger("Hit");
-            //    }
-            //}
 
         }
     }

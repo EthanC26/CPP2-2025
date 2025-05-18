@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,6 +13,7 @@ public class BetterEnemy : MonoBehaviour
     public int curHealth;
     public int maxHealth;
     public int baseHealth;
+    public event Action<int> OnHealthChanged;
 
     public GameObject powerUp;
     [SerializeField] private Vector3 spawnOffSet = new Vector3(0, 50, 0);
@@ -30,6 +32,8 @@ public class BetterEnemy : MonoBehaviour
     public Transform[] path;
     public int pathIndex = 1;
     public float distThreshold = 0.2f; // floating point math is inexact, this allows us to get close enough to the waypoint and move to the next one.
+
+    public float elapsedTime = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -95,18 +99,20 @@ public class BetterEnemy : MonoBehaviour
                 }
             }
             agent.SetDestination(target.position);
+
         
+
     }
     public Player _player;
 
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.CompareTag("weapon") && _player.attack && !_player.hasHit)
         {
-            DamageTaken();
-            
-            anim.SetTrigger("Hit");
             _player.hasHit = true;
+            DamageTaken();
+            anim.SetTrigger("Hit");
         }
         if(other.gameObject.CompareTag("player"))
         {
@@ -141,6 +147,7 @@ public class BetterEnemy : MonoBehaviour
     {
        
         curHealth -= 1;
+       
 
         if (curHealth <= 0)
         {
@@ -148,8 +155,11 @@ public class BetterEnemy : MonoBehaviour
             anim.SetTrigger("Die");
             Destroy(gameObject, 3f);
 
-            Instantiate(powerUp, transform.position + spawnOffSet, transform.rotation);
-            Debug.Log($"PowerUp Moved {transform.position + spawnOffSet}");
+            Vector3 spawnPos = new Vector3(transform.position.x, 50f, transform.position.z);
+            Instantiate(powerUp, spawnPos, transform.rotation);
+            Debug.Log($"PowerUp Moved {spawnPos}");
         }
+
+        OnHealthChanged?.Invoke(curHealth);
     }
 }
