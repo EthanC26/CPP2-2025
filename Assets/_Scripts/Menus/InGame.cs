@@ -10,11 +10,11 @@ public class InGame : BaseMenu
         base.Init(contex);
         state = MenuStates.InGame;
 
-        livesText.text = $"{GameManager.Instance.Lives}";
+        livesText.text = $"remaining lives{GameManager.Instance.Lives}";
 
         GameManager.Instance.OnLifeValueChanged += LifeValueChanged; // Subscribe to the event
     }
-    private void LifeValueChanged(int Value) => livesText.text = $"{Value}"; // Update the text with the new value
+    private void LifeValueChanged(int Value) => livesText.text = $"remaining lives: {Value}"; // Update the text with the new value
 
     private void OnDestroy() => GameManager.Instance.OnLifeValueChanged -= LifeValueChanged;
 

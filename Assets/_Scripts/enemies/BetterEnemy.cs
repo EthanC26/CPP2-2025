@@ -14,7 +14,11 @@ public class BetterEnemy : MonoBehaviour
     public int baseHealth;
 
     public GameObject powerUp;
-    [SerializeField] private Vector3 spawnOffSet = new Vector3(0, 5, 0);
+    [SerializeField] private Vector3 spawnOffSet = new Vector3(0, 50, 0);
+    //attack varibales
+    [SerializeField] private float attackRange = 2f;
+    [SerializeField] private float attackCooldown = 1.5f;
+    private float lastAttackTime;
 
     public Transform player;
     public EnemyState currentState;
@@ -22,7 +26,7 @@ public class BetterEnemy : MonoBehaviour
     Transform target;
     NavMeshAgent agent;
     Animator anim;
-
+   
     public Transform[] path;
     public int pathIndex = 1;
     public float distThreshold = 0.2f; // floating point math is inexact, this allows us to get close enough to the waypoint and move to the next one.
@@ -31,6 +35,7 @@ public class BetterEnemy : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
+        
 
         baseHealth = 5;
         maxHealth = 10;
@@ -43,35 +48,55 @@ public class BetterEnemy : MonoBehaviour
     void FixedUpdate()
     {
         if (!target) return;
-
-        if (currentState == EnemyState.chase)
+        //chase
+        if (currentState == EnemyState.chase && curHealth > 0)
         {
             anim.SetBool("Chase", true);
             anim.SetBool("Patrol", false);
-
             target = player;
-        }
 
-        if (currentState == EnemyState.Patrol)
-        {
-            anim.SetBool("Patrol", true);
-            anim.SetBool("Chase", false);
+            float disToPlayer = Vector3.Distance(transform.position, player.position);
+
+            if (disToPlayer <= attackRange)
+            {
+                agent.isStopped = true;
+
+                anim.SetTrigger("Attack");
+
+                if (Time.time >= lastAttackTime + attackCooldown)
+                {
+                    
+                    lastAttackTime = Time.time;
+                }
+            }
+            else
+            {
+                agent.isStopped = false;
+                agent.SetDestination(target.position);
+            }
+        }
+        //patrol
+        if (currentState == EnemyState.Patrol && curHealth > 0)
+            {
+                anim.SetBool("Patrol", true);
+                anim.SetBool("Chase", false);
+                agent.isStopped = false;
 
             if (target == player) target = path[pathIndex];
 
-            if(agent.remainingDistance < distThreshold)
-            {
-                pathIndex++;
-                //0 mod 4 - return 0 - 4 mod 4 return 0
-                pathIndex %= path.Length;
-                target = path[pathIndex];
-                //if we reach the end of the path - go back to zero
-                //if (pathIndex == path.Length) pathIndex = 0;
+                if (agent.remainingDistance < distThreshold)
+                {
+                    pathIndex++;
+                    //0 mod 4 - return 0 - 4 mod 4 return 0
+                    pathIndex %= path.Length;
+                    target = path[pathIndex];
+                    //if we reach the end of the path - go back to zero
+                    //if (pathIndex == path.Length) pathIndex = 0;
+                }
             }
-        }
-        agent.SetDestination(target.position);
+            agent.SetDestination(target.position);
+        
     }
-
     public Player _player;
 
     private void OnTriggerEnter(Collider other)
@@ -79,12 +104,14 @@ public class BetterEnemy : MonoBehaviour
         if (other.gameObject.CompareTag("weapon") && _player.attack && !_player.hasHit)
         {
             DamageTaken();
+            
+            anim.SetTrigger("Hit");
             _player.hasHit = true;
         }
         if(other.gameObject.CompareTag("player"))
         {
             GameManager.Instance.Lives--;
-
+            
         }
 
     }
@@ -99,17 +126,21 @@ public class BetterEnemy : MonoBehaviour
     }
 
 
-
+    
 
     private void DamageTaken()
     {
+       
         curHealth -= 1;
 
         if (curHealth <= 0)
         {
-            Destroy(gameObject);
-            
+            agent.isStopped = true;
+            anim.SetTrigger("Die");
+            Destroy(gameObject, 3f);
+
             Instantiate(powerUp, transform.position + spawnOffSet, transform.rotation);
+            Debug.Log($"PowerUp Moved {transform.position + spawnOffSet}");
         }
     }
 }
