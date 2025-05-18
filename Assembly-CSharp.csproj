@@ -67,7 +67,6 @@
     <Compile Include="Assets\_Scripts\Misc\RotatePond.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\Menus\MenuController.cs" />
-    <Compile Include="Assets\_Scripts\enemies\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\_Scripts\enemies\EnemyStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Menus\VictoryMenu.cs" />
