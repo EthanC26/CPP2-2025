@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxLives: 10
-  playerPrefab: {fileID: 1967078623669906239, guid: df74b29d10dca484ea53af51435f778d, type: 3}
+  playerPrefab: {fileID: 0}

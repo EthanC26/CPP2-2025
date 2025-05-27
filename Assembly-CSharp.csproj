@@ -67,12 +67,12 @@
     <Compile Include="Assets\_Scripts\Misc\RotatePond.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\Menus\MenuController.cs" />
+    <Compile Include="Assets\_Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\_Scripts\enemies\EnemyStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Menus\VictoryMenu.cs" />
     <Compile Include="Assets\_Scripts\GameManager.cs" />
     <Compile Include="Assets\_Scripts\Menus\CreditsMenu.cs" />
-    <Compile Include="Assets\_Scripts\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Menus\BaseMenu.cs" />
     <Compile Include="Assets\_Scripts\Menus\InGame.cs" />
     <Compile Include="Assets\_Scripts\Singleton.cs" />
@@ -84,6 +84,7 @@
     <Compile Include="Assets\_Scripts\Pickups\randomPickup.cs" />
     <Compile Include="Assets\_Scripts\Pickups\IPickup.cs" />
     <Compile Include="Assets\_Scripts\Menus\GameOverMenu.cs" />
+    <Compile Include="Assets\_Scripts\Weapons\SMG.cs" />
     <Compile Include="Assets\_Scripts\enemies\EnemyContex.cs" />
   </ItemGroup>
   <ItemGroup>

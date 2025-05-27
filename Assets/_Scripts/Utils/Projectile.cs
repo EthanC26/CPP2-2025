@@ -1,3 +1,5 @@
+
+using System;
 using UnityEngine;
 
 [RequireComponent (typeof(Rigidbody))]
@@ -17,25 +19,26 @@ public class Projectile : MonoBehaviour
         GetComponent<Rigidbody>().linearVelocity = velocity;
     }
 
+    
     public void OnCollisionEnter(Collision collision)
     {
-        if (gameObject.CompareTag("pProj"))
-        {
-            Enemy e = collision.gameObject.GetComponent<Enemy>();
-            if (e != null) 
-            {
-                e.TakeDamage(damage);
-                Destroy(gameObject);
-            }
-        }
-        if(gameObject.CompareTag("eProj") && collision.gameObject.CompareTag("player"))
-        {
-         
-            Player player = collision.gameObject.GetComponent<Player>();
-            //player.lives--;
-            Debug.Log("hit");
-            Destroy(gameObject);
+        //if (gameObject.CompareTag("pProj"))
+        //{
+        //    Enemy e = collision.gameObject.GetComponent<Enemy>();
+        //    if (e != null)
+        //    {
+        //        e.TakeDamage(damage);
+        //        Destroy(gameObject);
+        //    }
+        //}
+        //if (gameObject.CompareTag("eProj") && collision.gameObject.CompareTag("player"))
+        //{
 
-        }
+        //    Player player = collision.gameObject.GetComponent<Player>();
+        //    //player.lives--;
+        //    Debug.Log("hit");
+        //    Destroy(gameObject);
+
+        //}
     }
 }
