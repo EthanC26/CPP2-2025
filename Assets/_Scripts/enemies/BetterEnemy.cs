@@ -143,7 +143,7 @@ public class BetterEnemy : MonoBehaviour
 
     
 
-    private void DamageTaken()
+    public void DamageTaken()
     {
        
         curHealth -= 1;

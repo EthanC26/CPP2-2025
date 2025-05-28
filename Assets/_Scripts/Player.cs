@@ -44,6 +44,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     public bool uAttack = false;
     public bool attack = false;
     public bool hasHit = false;
+    public bool ShootAttack = false;
 
     //character Movement
     Vector2 direction;
@@ -123,9 +124,17 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     public void OnShoot(InputAction.CallbackContext context)
     {
-      
+        if (gun)
+        {
+            Shoot _shoot = GetComponent<Shoot>();
+
+            //_shoot.Fire();
+            ShootAttack = true;
             elapsedTime = 0;
-       
+            Debug.Log($"shooting with {gun.name}");
+        }
+
+        else Debug.Log("No gun to shoot with");
     }
 
     #endregion
@@ -135,8 +144,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         
         anim.SetBool("unarmedAttack", uAttack);
         anim.SetBool("Attack", attack);
+        anim.SetBool("Shooting", ShootAttack);
 
-       
+
         Vector2 groundVel = new Vector2(velocity.x, velocity.z);
         anim.SetFloat("vel", groundVel.magnitude);
 
@@ -168,6 +178,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         {
             uAttack = false;
             attack = false;
+            ShootAttack = false;
         }
         elapsedTime += Time.deltaTime;
 

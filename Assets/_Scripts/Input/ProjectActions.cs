@@ -231,7 +231,7 @@ public partial class @ProjectActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""80508f1a-4c2c-439f-8ac3-9fc0b6a21c0f"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""path"": ""<Keyboard>/leftShift"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

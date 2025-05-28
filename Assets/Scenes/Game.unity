@@ -33102,10 +33102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol_A
       objectReference: {fileID: 0}
-    - target: {fileID: 2225440571541060868, guid: 3d475f10d076c444d8584c1be775ba38, type: 3}
-      propertyPath: m_TagString
-      value: Gun
-      objectReference: {fileID: 0}
+    - target: {fileID: 7276616310560654177, guid: 3d475f10d076c444d8584c1be775ba38, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 6574265762106984756, guid: ec0581e8aa214204b9f01884e77f846c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46688,10 +46688,6 @@ PrefabInstance:
     - target: {fileID: 4920507860935382577, guid: 5f04650d3064895489cdb8f95e907c1b, type: 3}
       propertyPath: m_Name
       value: Pistol_D
-      objectReference: {fileID: 0}
-    - target: {fileID: 4920507860935382577, guid: 5f04650d3064895489cdb8f95e907c1b, type: 3}
-      propertyPath: m_TagString
-      value: Gun
       objectReference: {fileID: 0}
     - target: {fileID: 5693384977058778251, guid: 5f04650d3064895489cdb8f95e907c1b, type: 3}
       propertyPath: m_LocalPosition.x
