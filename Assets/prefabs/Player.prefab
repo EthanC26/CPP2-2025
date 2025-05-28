@@ -31,6 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 788387427037421015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1418786664113866075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7633043638078698158}
+  m_Layer: 0
+  m_Name: gunAttachPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7633043638078698158
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418786664113866075}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.46836957, y: -0.59179986, z: -0.5564049, w: 0.3475865}
+  m_LocalPosition: {x: 0.057413917, y: 0.11138318, z: 0.050510503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2914930993740839314}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1726685045662707696
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726685045662707696}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 394, y: 51.088, z: 377.90723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -144,11 +175,11 @@ MonoBehaviour:
   jumpTime: 0.7
   attackPrefab: []
   weaponAttachPoint: {fileID: 2406056316759124156}
+  gunAttachPoint: {fileID: 7633043638078698158}
   uAttack: 0
   attack: 0
   hasHit: 0
   inView: 0
-  maxLives: 5
 --- !u!143 &7723695052549855456
 CharacterController:
   m_ObjectHideFlags: 0
@@ -219,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc03f198bd0487f42a108082bd495552, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -1.057
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cc03f198bd0487f42a108082bd495552, type: 3}
       propertyPath: m_LocalPosition.z
@@ -276,6 +307,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6502182839619065283, guid: cc03f198bd0487f42a108082bd495552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7633043638078698158}
     - targetCorrespondingSourceObject: {fileID: 6502182839619065283, guid: cc03f198bd0487f42a108082bd495552, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2406056316759124156}

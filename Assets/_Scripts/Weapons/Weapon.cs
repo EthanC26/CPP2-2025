@@ -21,7 +21,9 @@ internal class Weapon : MonoBehaviour
         rb.isKinematic = true;
         //setting our bc to be a trigger so we are not blocked by the sword collision
         bc.isTrigger = true;
+            
         transform.SetParent(weaponAttachPoint);
+     
         transform.SetLocalPositionAndRotation(Vector3.zero, Quaternion.identity);
         Physics.IgnoreCollision(playerCollider, bc);
     }

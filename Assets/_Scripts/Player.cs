@@ -36,7 +36,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     //weapon variables
     [Header("Weapon Variables")]
     [SerializeField] private Transform weaponAttachPoint;
+    [SerializeField] private Transform gunAttachPoint;
     Weapon weapon = null;
+    Weapon gun = null;
 
     //attack vaiables
     public bool uAttack = false;
@@ -91,11 +93,17 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     public void OnDrop(InputAction.CallbackContext context)
     {
-        if(weapon)
+        if (weapon)
         {
             weapon.Drop(GetComponent<Collider>(), transform.forward);
             weapon = null;
         }
+        else if (gun)
+        {
+            gun.Drop(GetComponent<Collider>(), transform.forward);
+            gun = null;
+        }
+        else Debug.Log("No weapon to drop");
     }
     public void OnAttack(InputAction.CallbackContext context)
     {
@@ -106,7 +114,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             hasHit = false;
             elapsedTime = 0;
         }
-        else
+        else if (!gun && !weapon)
         {
             uAttack = true;
             elapsedTime = 0;
@@ -226,12 +234,19 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.collider.CompareTag("weapon") && weapon == null)
+        if (hit.collider.CompareTag("weapon") && weapon == null && gun == null)
         {
             weapon = hit.gameObject.GetComponent<Weapon>();
             weapon.Equip(GetComponent<Collider>(), weaponAttachPoint);
+
         }
-      
+
+        if (hit.collider.CompareTag("Gun") && weapon == null && gun == null)
+        {
+            gun = hit.gameObject.GetComponent<Weapon>();
+            gun.Equip(GetComponent<Collider>(), gunAttachPoint);
+        }
+
         if (hit.gameObject.CompareTag("endPoint"))
         {
             string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "Victory" : "Game";
