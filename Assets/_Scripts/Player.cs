@@ -126,7 +126,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     {
         if (gun)
         {
-            Shoot _shoot = GetComponent<Shoot>();
+            //Shoot _shoot = GetComponent<Shoot>();
 
             //_shoot.Fire();
             ShootAttack = true;
