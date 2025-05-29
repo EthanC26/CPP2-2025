@@ -84,7 +84,6 @@
     <Compile Include="Assets\_Scripts\Pickups\randomPickup.cs" />
     <Compile Include="Assets\_Scripts\Pickups\IPickup.cs" />
     <Compile Include="Assets\_Scripts\Menus\GameOverMenu.cs" />
-    <Compile Include="Assets\_Scripts\Weapons\SMG.cs" />
     <Compile Include="Assets\_Scripts\enemies\EnemyContex.cs" />
   </ItemGroup>
   <ItemGroup>

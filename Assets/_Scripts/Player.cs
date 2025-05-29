@@ -38,7 +38,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     [SerializeField] private Transform weaponAttachPoint;
     [SerializeField] private Transform gunAttachPoint;
     Weapon weapon = null;
-    Weapon gun = null;
+    Weapon SMG = null;
+    Weapon banger = null;
 
     //attack vaiables
     public bool uAttack = false;
@@ -99,10 +100,15 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             weapon.Drop(GetComponent<Collider>(), transform.forward);
             weapon = null;
         }
-        else if (gun)
+        else if (SMG)
         {
-            gun.Drop(GetComponent<Collider>(), transform.forward);
-            gun = null;
+            SMG.Drop(GetComponent<Collider>(), transform.forward);
+            SMG = null;
+        }
+        else if (banger)
+        {
+            banger.Drop(GetComponent<Collider>(), transform.forward);
+            banger = null;
         }
         else Debug.Log("No weapon to drop");
     }
@@ -115,7 +121,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             hasHit = false;
             elapsedTime = 0;
         }
-        else if (!gun && !weapon)
+        else if (!SMG && !weapon && !banger)
         {
             uAttack = true;
             elapsedTime = 0;
@@ -124,11 +130,18 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     public void OnShoot(InputAction.CallbackContext context)
     {
-        if (gun)
+        if (SMG)
         {
             ShootAttack = true;
             elapsedTime = 0;
            
+        }
+        else if(banger)
+        {
+            //set up a diffrent bool for the banger weapon and possably a diffrent animation for it
+
+            //ShootAttack = true; 
+            elapsedTime = 0;
         }
 
         else Debug.Log("No gun to shoot with");
@@ -242,17 +255,23 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.collider.CompareTag("weapon") && weapon == null && gun == null)
+        if (hit.collider.CompareTag("weapon") && weapon == null && SMG == null)
         {
             weapon = hit.gameObject.GetComponent<Weapon>();
             weapon.Equip(GetComponent<Collider>(), weaponAttachPoint);
 
         }
 
-        if (hit.collider.CompareTag("Gun") && weapon == null && gun == null)
+        if (hit.collider.CompareTag("SMG") && weapon == null && SMG == null && banger)
         {
-            gun = hit.gameObject.GetComponent<Weapon>();
-            gun.Equip(GetComponent<Collider>(), gunAttachPoint);
+            SMG = hit.gameObject.GetComponent<Weapon>();
+            SMG.Equip(GetComponent<Collider>(), gunAttachPoint);
+        }
+
+        if (hit.collider.CompareTag("Banger") && weapon == null && banger == null && SMG == null)
+        {
+            banger = hit.gameObject.GetComponent<Weapon>();
+            banger.Equip(GetComponent<Collider>(), gunAttachPoint);
         }
 
         if (hit.gameObject.CompareTag("endPoint"))

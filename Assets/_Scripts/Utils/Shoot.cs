@@ -5,7 +5,7 @@ public class Shoot : MonoBehaviour
 
     [SerializeField] private Camera playerCamera;
 
-    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform SMGspawnPoint;
 
     [SerializeField] private Projectile projectilePrefab;
 
@@ -19,7 +19,7 @@ public class Shoot : MonoBehaviour
         {
             playerCamera = Camera.main;
         }
-        if (!spawnPoint)
+        if (!SMGspawnPoint)
             Debug.Log($"please put on {gameObject.name}");
     }
 
@@ -28,7 +28,7 @@ public class Shoot : MonoBehaviour
         
         Vector3 shootDirection = transform.forward;
 
-        Projectile curProjectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.LookRotation(shootDirection));
+        Projectile curProjectile = Instantiate(projectilePrefab, SMGspawnPoint.position, Quaternion.LookRotation(shootDirection));
 
         curProjectile.SetVelocity(shootDirection * bulletSPeed);
 

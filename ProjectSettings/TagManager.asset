@@ -14,7 +14,8 @@ TagManager:
   - ground
   - AttackTrigger
   - Powerup
-  - Gun
+  - SMG
+  - Banger
   layers:
   - Default
   - TransparentFX
