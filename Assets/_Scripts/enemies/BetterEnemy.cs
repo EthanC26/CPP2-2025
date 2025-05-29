@@ -112,7 +112,6 @@ public class BetterEnemy : MonoBehaviour
         {
             _player.hasHit = true;
             DamageTaken();
-            anim.SetTrigger("Hit");
         }
         if(other.gameObject.CompareTag("player"))
         {
@@ -125,29 +124,24 @@ public class BetterEnemy : MonoBehaviour
                 Debug.Log("Player Hit");
                 playeranim.SetTrigger("Hit");
             }
-
-            else Debug.Log("Player Hit - No Animator");
         }
 
+        //if(other.gameObject.CompareTag("pProj"))
+        //{
+        //    DamageTaken();
+        //    anim.SetTrigger("Hit");
+        //    Destroy(other.gameObject);
+        //    Debug.Log("Projectile Hit Enemy");
+        //}
+
     }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.CompareTag("weapon") && _player.attack && !_player.hasHit)
-        {
-            DamageTaken();
-            _player.hasHit = true;
-        }
-    }
-
-
-    
 
     public void DamageTaken()
     {
        
         curHealth -= 1;
-       
+        anim.SetTrigger("Hit");
+
 
         if (curHealth <= 0)
         {

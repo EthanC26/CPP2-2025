@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 2357151359868573603}
   - component: {fileID: 7908437983667636988}
   - component: {fileID: 6306191235775412456}
-  - component: {fileID: 3059543627560683850}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: enemy
@@ -162,6 +161,8 @@ MonoBehaviour:
   baseHealth: 0
   powerUp: {fileID: 5056787398594155144, guid: f4d576675b261004c933941aa40c0899, type: 3}
   spawnOffSet: {x: 0, y: 1, z: 0}
+  attackRange: 2
+  attackCooldown: 1.5
   player: {fileID: 0}
   currentState: 1
   path:
@@ -173,6 +174,7 @@ MonoBehaviour:
   - {fileID: 1068792047845766788}
   pathIndex: 0
   distThreshold: 0.02
+  elapsedTime: 0
   _player: {fileID: 0}
 --- !u!136 &7908437983667636988
 CapsuleCollider:
@@ -224,28 +226,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &3059543627560683850
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7719350945500752512}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4392880478367549568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,6 +277,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6cd19182faca7ad45bcd5591812beb7c, type: 3}
       propertyPath: m_Name
       value: Vanguard By T. Choonyung
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6cd19182faca7ad45bcd5591812beb7c, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 6cd19182faca7ad45bcd5591812beb7c, type: 3}
       propertyPath: m_Controller

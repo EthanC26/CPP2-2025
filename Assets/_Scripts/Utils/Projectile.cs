@@ -6,7 +6,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField, Range(1, 20)] private float lifeTime = 1.0f;
-   // [SerializeField, Range(1, 20)] private int damage = 20;
+  
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,26 +19,27 @@ public class Projectile : MonoBehaviour
         GetComponent<Rigidbody>().linearVelocity = velocity;
     }
 
-    
-    public void OnCollisionEnter(Collision collision)
+
+    public void OnTriggerEnter(Collider other)
     {
-        if (gameObject.CompareTag("pProj"))
+        if (gameObject.CompareTag("pProj") && other.gameObject.CompareTag("enemy"))
         {
-            BetterEnemy e = collision.gameObject.GetComponent<BetterEnemy>();
+            BetterEnemy e = other.gameObject.GetComponent<BetterEnemy>();
             if (e != null)
             {
                 e.DamageTaken();
                 Destroy(gameObject);
+                Debug.Log("shot enemy");
             }
         }
-        if (gameObject.CompareTag("eProj") && collision.gameObject.CompareTag("player"))
-        {
+        //if (gameObject.CompareTag("eProj") && other.gameObject.CompareTag("player"))
+        //{
 
-            Player player = collision.gameObject.GetComponent<Player>();
-            //player.lives--;
-            Debug.Log("hit");
-            Destroy(gameObject);
+        //    Player player = other.gameObject.GetComponent<Player>();
+        //    //player.lives--;
+        //    Debug.Log("hit");
+        //    Destroy(gameObject);
 
-        }
+        //}
     }
 }

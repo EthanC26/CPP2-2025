@@ -2,22 +2,22 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    SpriteRenderer sr;
-    [SerializeField] private Vector3 initShotVelocity = Vector3.zero;
+
+    [SerializeField] private Camera playerCamera;
 
     [SerializeField] private Transform spawnPoint;
 
     [SerializeField] private Projectile projectilePrefab;
 
+    [SerializeField] private float bulletSPeed = 30.0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
 
-        if (initShotVelocity == Vector3.zero)
+        if (!playerCamera)
         {
-            Debug.Log("Init shot velocity has been changed to default");
-            initShotVelocity.x = 7.0f;
+            playerCamera = Camera.main;
         }
         if (!spawnPoint)
             Debug.Log($"please put on {gameObject.name}");
@@ -25,8 +25,12 @@ public class Shoot : MonoBehaviour
 
     public void Fire()
     {
-        Projectile curProjectile;
-        curProjectile = Instantiate(projectilePrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
-        curProjectile.SetVelocity (initShotVelocity);
+        
+        Vector3 shootDirection = transform.forward;
+
+        Projectile curProjectile = Instantiate(projectilePrefab, spawnPoint.position, Quaternion.LookRotation(shootDirection));
+
+        curProjectile.SetVelocity(shootDirection * bulletSPeed);
+
     }
 }

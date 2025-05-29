@@ -5740,6 +5740,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!4 &413087041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8317990542970037843, guid: 3d475f10d076c444d8584c1be775ba38, type: 3}
+  m_PrefabInstance: {fileID: 1622521116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &426827838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1507636620937791777, guid: 7097ba7ba649e1f41bba232312bdcbd8, type: 3}
@@ -33102,10 +33107,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol_A
       objectReference: {fileID: 0}
-    - target: {fileID: 7276616310560654177, guid: 3d475f10d076c444d8584c1be775ba38, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 6574265762106984756, guid: ec0581e8aa214204b9f01884e77f846c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48405,14 +48406,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 756563220}
     - target: {fileID: 2357151359868573603, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
-      propertyPath: curHealth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2357151359868573603, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
-      propertyPath: maxHealth
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2357151359868573603, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
       propertyPath: 'path.Array.data[0]'
       value: 
       objectReference: {fileID: 51343988}
@@ -48432,20 +48425,11 @@ PrefabInstance:
       propertyPath: 'path.Array.data[4]'
       value: 
       objectReference: {fileID: 217268534}
-    - target: {fileID: 3474470301404083665, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
-      propertyPath: m_TagString
-      value: enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3602884770018552718, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7719350945500752512, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3059543627560683850, guid: a73f5fd7650e0374784568f153f9e62d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -48564,6 +48548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8597524680106617182, guid: df74b29d10dca484ea53af51435f778d, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 413087041}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

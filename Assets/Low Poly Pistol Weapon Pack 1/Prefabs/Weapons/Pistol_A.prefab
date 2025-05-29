@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6926406689176743399}
   - component: {fileID: 2710866958185877541}
   - component: {fileID: 2328918975712006464}
-  - component: {fileID: 7276616310560654177}
   m_Layer: 0
   m_Name: Pistol_A
   m_TagString: Gun
@@ -101,21 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 262b63afc8999cf49a19f30227662195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7276616310560654177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2225440571541060868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02aa51639b591fd45b1fa4a76c3806b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initShotVelocity: {x: 0, y: 0, z: 0}
-  spawnPoint: {fileID: 8317990542970037843}
-  projectilePrefab: {fileID: 0}
 --- !u!1 &3855242166856616131
 GameObject:
   m_ObjectHideFlags: 0

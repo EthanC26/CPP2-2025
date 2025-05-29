@@ -126,12 +126,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     {
         if (gun)
         {
-            //Shoot _shoot = GetComponent<Shoot>();
-
-            //_shoot.Fire();
             ShootAttack = true;
             elapsedTime = 0;
-            Debug.Log($"shooting with {gun.name}");
+           
         }
 
         else Debug.Log("No gun to shoot with");
