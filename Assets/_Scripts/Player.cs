@@ -47,6 +47,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     public bool hasHit = false;
     public bool ShootAttack = false;
 
+    private Shoot shoot;
+
     //character Movement
     Vector2 direction;
     Vector3 velocity;
@@ -64,6 +66,11 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        shoot = GetComponentInChildren<Shoot>();
+        if(!shoot)
+        {
+            Debug.LogError("Shoot component not found!");
+        }
         anim = GetComponentInChildren<Animator>();
         cc = GetComponent<CharacterController>();
         mainCam = Camera.main;
@@ -138,9 +145,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         }
         else if(banger)
         {
-            //set up a diffrent bool for the banger weapon and possably a diffrent animation for it
-
-            //ShootAttack = true; 
+           
+            ShootAttack = true; 
             elapsedTime = 0;
         }
 
@@ -255,21 +261,30 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.collider.CompareTag("weapon") && weapon == null && SMG == null)
+        if (hit.collider.CompareTag("weapon") && weapon == null && SMG == null && banger == null)
         {
             weapon = hit.gameObject.GetComponent<Weapon>();
             weapon.Equip(GetComponent<Collider>(), weaponAttachPoint);
 
         }
 
-        if (hit.collider.CompareTag("SMG") && weapon == null && SMG == null && banger)
+        if (hit.collider.CompareTag("SMG") && weapon == null && SMG == null && banger == null)
         {
+            if(shoot != null)
+            {
+                shoot.SetGun(Shoot.GunType.SMG);
+            }
             SMG = hit.gameObject.GetComponent<Weapon>();
             SMG.Equip(GetComponent<Collider>(), gunAttachPoint);
+            
         }
 
         if (hit.collider.CompareTag("Banger") && weapon == null && banger == null && SMG == null)
         {
+            if (shoot != null)
+            {
+                shoot.SetGun(Shoot.GunType.Banger);
+            }
             banger = hit.gameObject.GetComponent<Weapon>();
             banger.Equip(GetComponent<Collider>(), gunAttachPoint);
         }

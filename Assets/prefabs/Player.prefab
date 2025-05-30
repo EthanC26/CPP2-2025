@@ -354,7 +354,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02aa51639b591fd45b1fa4a76c3806b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  projectilePrefab: {fileID: 6574265762106984756, guid: ec0581e8aa214204b9f01884e77f846c, type: 3}
-  bulletSPeed: 30
+  SMGSpawnPoint: {fileID: 0}
+  SMGProjectilePrefab: {fileID: 6574265762106984756, guid: ec0581e8aa214204b9f01884e77f846c, type: 3}
+  SMGBulletSPeed: 30
+  bangerSpawnPoint: {fileID: 0}
+  bangerProjectilePrefab: {fileID: 505436237264680849, guid: 2dd9fa09e55f38d469aae601022afcd7, type: 3}
+  bangerBulletSpeed: 30
+  currentGun: 0
