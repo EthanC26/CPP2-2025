@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
                 GameOver();
                 return;
             }
-           // if (_lives > value) Respawn();
+
+           if (_lives > value) DamageTaken();
 
             _lives = value;
 
@@ -101,7 +102,30 @@ public class GameManager : MonoBehaviour
                     CurrentMenuController.JumpBack();
             }
         }
+
+        if(SceneManager.GetActiveScene().name.Contains("Game"))
+        {
+            if(Input.GetKeyDown(KeyCode.R))
+            {
+                if (CurrentMenuController.CurrentState.state == MenuStates.InGame)
+                    CurrentMenuController.SetActiveState(MenuStates.Continue);
+                else
+                    CurrentMenuController.JumpBack();
+            }
+
+
+
+        }
     }
+
+    void DamageTaken()
+    {
+        if (CurrentMenuController.CurrentState.state == MenuStates.InGame)
+            CurrentMenuController.SetActiveState(MenuStates.Continue);
+        else
+            CurrentMenuController.JumpBack();
+    }
+
     void GameOver()
     {
         if(Lives <= 0)

@@ -303,13 +303,6 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
             Destroy(hit.gameObject);
             Debug.Log("PowerUp Hit!!");
         }
-
-        //if(hit.gameObject.CompareTag("enemy"))
-        //{
-        //    Debug.Log("Enemy Hit!!");
-        //    anim.SetTrigger("Hit");
-        //}
-
     }
    
 }

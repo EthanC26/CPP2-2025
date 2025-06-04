@@ -6,6 +6,8 @@ public class PauseMenu : BaseMenu
     public Button quitBtn;
     public Button resumeBtn;
     public Button mainMenuBtn;
+    public Button saveBtn;
+    public Button loadBtn;
 
     public override void Init(MenuController context)
     {
@@ -14,6 +16,8 @@ public class PauseMenu : BaseMenu
 
         quitBtn.onClick.AddListener(context.QuitGame);
         resumeBtn.onClick.AddListener(context.JumpBack);
+        //saveBtn.onClick.AddListener(() =>
+        //loadBtn.onClick.AddListener(() => Debug.Log("Load Game")); // Placeholder for save/load functionality
         mainMenuBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("Title"));
     }
 

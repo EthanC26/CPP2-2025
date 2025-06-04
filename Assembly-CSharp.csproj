@@ -66,6 +66,7 @@
     <Compile Include="Assets\_Scripts\Input\ProjectActions.cs" />
     <Compile Include="Assets\_Scripts\Misc\RotatePond.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
+    <Compile Include="Assets\_Scripts\LoadSaveManager.cs" />
     <Compile Include="Assets\_Scripts\Menus\MenuController.cs" />
     <Compile Include="Assets\_Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Menus\MainMenu.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\_Scripts\Singleton.cs" />
     <Compile Include="Assets\_Scripts\Utils\Projectile.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
+    <Compile Include="Assets\_Scripts\Menus\ContinueMenu.cs" />
     <Compile Include="Assets\_Scripts\enemies\BetterEnemy.cs" />
     <Compile Include="Assets\_Scripts\Player.cs" />
     <Compile Include="Assets\_Scripts\Menus\PauseMenu.cs" />
