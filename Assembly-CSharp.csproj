@@ -65,8 +65,8 @@
     <Compile Include="Assets\_Scripts\Utils\BootStrapper.cs" />
     <Compile Include="Assets\_Scripts\Input\ProjectActions.cs" />
     <Compile Include="Assets\_Scripts\Misc\RotatePond.cs" />
-    <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\LoadSaveManager.cs" />
+    <Compile Include="Assets\IgniteCoders\Simple Water Shader\Info\Scripts\Readme.cs" />
     <Compile Include="Assets\_Scripts\Menus\MenuController.cs" />
     <Compile Include="Assets\_Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\_Scripts\Menus\MainMenu.cs" />
