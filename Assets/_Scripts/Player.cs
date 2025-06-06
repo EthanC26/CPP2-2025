@@ -259,6 +259,16 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         
     }
 
+    public void ResetPlayerState(Vector3 newPosition, Quaternion newRotation)
+    {
+        cc.enabled = false;  // Temporarily disable to safely move CharacterController
+        transform.position = newPosition;
+        transform.rotation = newRotation;
+        velocity = Vector3.zero;    // reset velocity so no unwanted motion happens
+        direction = Vector2.zero;   // reset input direction
+        cc.enabled = true;         // Re-enable
+    }
+
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         if (hit.collider.CompareTag("weapon") && weapon == null && SMG == null && banger == null)

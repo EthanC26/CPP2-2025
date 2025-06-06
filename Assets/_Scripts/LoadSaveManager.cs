@@ -1,5 +1,5 @@
+using System.IO;
 using System.Xml.Serialization;
-using NUnit.Framework;
 using UnityEngine;
 
 public class LoadSaveManager : MonoBehaviour
@@ -46,15 +46,30 @@ public class LoadSaveManager : MonoBehaviour
         public DataEnemy enemyData = new DataEnemy();
     }
     // Game data to save/load
-    public GameStateData gameStateData = new GameStateData();
+    public GameStateData gameState = new GameStateData();
     // Saves game data to XML file
-    public void Save()
+    public void Save(string fileName = "GameData.xml")
     {
         // Save game data
+        XmlSerializer serializer = new XmlSerializer(typeof(GameStateData));
+        FileStream fileStream = new FileStream(fileName, FileMode.Create);
+        serializer.Serialize(fileStream, gameState);
+
+        fileStream.Flush();
+        fileStream.Close();
+        fileStream.Dispose();
     }
     // Load game data from XML file
-    public void Load()
+    public void Load(string fileName = "GameData.xml")
     {
-        //load game data
+
+        XmlSerializer serializer = new XmlSerializer(typeof(GameStateData));
+        FileStream fileStream = new FileStream(fileName, FileMode.Open);
+        gameState = serializer.Deserialize(fileStream) as GameStateData;
+
+        fileStream.Flush();
+        fileStream.Close();
+        fileStream.Dispose();
+
     }
 }

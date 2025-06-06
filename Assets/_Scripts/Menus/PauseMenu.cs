@@ -16,8 +16,8 @@ public class PauseMenu : BaseMenu
 
         quitBtn.onClick.AddListener(context.QuitGame);
         resumeBtn.onClick.AddListener(context.JumpBack);
-        //saveBtn.onClick.AddListener(() =>
-        //loadBtn.onClick.AddListener(() => Debug.Log("Load Game")); // Placeholder for save/load functionality
+        saveBtn.onClick.AddListener(() => GameManager.Instance.SaveGame());
+        loadBtn.onClick.AddListener(() => GameManager.Instance.LoadGame());
         mainMenuBtn.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("Title"));
     }
 
