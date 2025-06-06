@@ -10,6 +10,9 @@ public class BetterEnemy : MonoBehaviour
         chase, Patrol
     }
 
+    public bool Chase = false;
+    public bool Patrol = false;
+
     public int curHealth;
     public int maxHealth;
     public int baseHealth;
@@ -55,6 +58,9 @@ public class BetterEnemy : MonoBehaviour
         //chase
         if (currentState == EnemyState.chase && curHealth > 0)
         {
+            Chase = true;
+            Patrol = false;
+
             anim.SetBool("Chase", true);
             anim.SetBool("Patrol", false);
             target = player;
@@ -82,6 +88,9 @@ public class BetterEnemy : MonoBehaviour
         //patrol
         if (currentState == EnemyState.Patrol && curHealth > 0)
             {
+                Patrol = true;
+                Chase = false;
+
                 anim.SetBool("Patrol", true);
                 anim.SetBool("Chase", false);
                 agent.isStopped = false;
@@ -125,15 +134,6 @@ public class BetterEnemy : MonoBehaviour
                 playeranim.SetTrigger("Hit");
             }
         }
-
-        //if(other.gameObject.CompareTag("pProj"))
-        //{
-        //    DamageTaken();
-        //    anim.SetTrigger("Hit");
-        //    Destroy(other.gameObject);
-        //    Debug.Log("Projectile Hit Enemy");
-        //}
-
     }
 
     public void DamageTaken()

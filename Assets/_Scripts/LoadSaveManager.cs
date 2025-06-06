@@ -1,14 +1,29 @@
 using System.IO;
+using System.Security.Cryptography;
 using System.Xml.Serialization;
 using UnityEngine;
 
 public class LoadSaveManager : MonoBehaviour
 {
+    private static readonly byte[] key = new byte[32]
+    {
+       1,2, 3, 4, 5, 6, 7, 8,
+       9,10,11,12,13,14,15,16,
+       17,18,19,20,21,22,23,24,
+       25,26,27,28,29,30,31,32
+    };
+
+    private static readonly byte[] iv = new byte[16]
+    {
+       33,34,35,36,37,38,39,40,
+       41,42,43,44,45,46,47,48
+    };
+
     // Save game data
     [XmlRoot("GameStateData")]
     public class GameStateData
     {
-       public struct DataTransform
+        public struct DataTransform
         {
             public float posx;
             public float posy;
@@ -52,24 +67,33 @@ public class LoadSaveManager : MonoBehaviour
     {
         // Save game data
         XmlSerializer serializer = new XmlSerializer(typeof(GameStateData));
-        FileStream fileStream = new FileStream(fileName, FileMode.Create);
-        serializer.Serialize(fileStream, gameState);
+        using FileStream fileStream = new FileStream(fileName, FileMode.Create);
+        
+        using Aes aes = Aes.Create();
+        aes.Key = key;
+        aes.IV = iv;
 
-        fileStream.Flush();
-        fileStream.Close();
-        fileStream.Dispose();
+        using CryptoStream cryptoStream = new CryptoStream(fileStream, aes.CreateEncryptor(), CryptoStreamMode.Write);
+        serializer.Serialize(cryptoStream, gameState);
     }
     // Load game data from XML file
     public void Load(string fileName = "GameData.xml")
     {
+      if(!File.Exists(fileName))
+        {
+            Debug.LogError($"Load failed: File {fileName} does not exist!");
+            return;
+        }
 
-        XmlSerializer serializer = new XmlSerializer(typeof(GameStateData));
-        FileStream fileStream = new FileStream(fileName, FileMode.Open);
-        gameState = serializer.Deserialize(fileStream) as GameStateData;
+      XmlSerializer serializer = new XmlSerializer(typeof(GameStateData));
+      using FileStream fileStream = new FileStream(fileName, FileMode.Open);
 
-        fileStream.Flush();
-        fileStream.Close();
-        fileStream.Dispose();
+        using Aes aes = Aes.Create();
+        aes.Key = key;
+        aes.IV = iv;
+
+        using CryptoStream cryptoStream = new CryptoStream(fileStream, aes.CreateDecryptor(), CryptoStreamMode.Read);
+        gameState = (GameStateData)serializer.Deserialize(cryptoStream) as GameStateData;
 
     }
 }

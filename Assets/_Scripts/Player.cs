@@ -54,7 +54,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     Vector3 velocity;
 
     public bool inView;
-   
+
 
     //calculated based on our jump values - this is the Y velocity that we will apply
     private float gravity;
@@ -67,14 +67,14 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     void Start()
     {
         shoot = GetComponentInChildren<Shoot>();
-        if(!shoot)
+        if (!shoot)
         {
             Debug.LogError("Shoot component not found!");
         }
         anim = GetComponentInChildren<Animator>();
         cc = GetComponent<CharacterController>();
         mainCam = Camera.main;
-       
+
         timeToJumpApex = jumpTime / 2;
         gravity = (-2 * jumpHeight) / Mathf.Pow(timeToJumpApex, 2);
         initJumpVelocity = -(gravity * timeToJumpApex);
@@ -141,12 +141,12 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         {
             ShootAttack = true;
             elapsedTime = 0;
-           
+
         }
-        else if(banger)
+        else if (banger)
         {
-           
-            ShootAttack = true; 
+
+            ShootAttack = true;
             elapsedTime = 0;
         }
 
@@ -157,7 +157,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     void Update()
     {
-        
+
         anim.SetBool("unarmedAttack", uAttack);
         anim.SetBool("Attack", attack);
         anim.SetBool("Shooting", ShootAttack);
@@ -198,7 +198,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         }
         elapsedTime += Time.deltaTime;
 
-       
+
     }
 
     void FixedUpdate()
@@ -215,9 +215,9 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     }
     private Vector3 ProjectedMoveDirection()
     {
-       //grab our fwd and right vectors for camera relative movement 
-       Vector3 camreaRight = mainCam.transform.right;
-       Vector3 camreaForward = mainCam.transform.forward;
+        //grab our fwd and right vectors for camera relative movement 
+        Vector3 camreaRight = mainCam.transform.right;
+        Vector3 camreaForward = mainCam.transform.forward;
 
         //remove yaw rotation
         camreaForward.y = 0;
@@ -241,7 +241,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
         if (!cc.isGrounded) velocity.y += gravity * Time.fixedDeltaTime;
         else velocity.y = CheckJump();
-        
+
         return velocity;
     }
 
@@ -251,12 +251,12 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
         if (isJumpPressed)
         {
-            
+
             return initJumpVelocity;
 
         }
         else return -cc.minMoveDistance;
-        
+
     }
 
     public void ResetPlayerState(Vector3 newPosition, Quaternion newRotation)
@@ -280,13 +280,13 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
         if (hit.collider.CompareTag("SMG") && weapon == null && SMG == null && banger == null)
         {
-            if(shoot != null)
+            if (shoot != null)
             {
                 shoot.SetGun(Shoot.GunType.SMG);
             }
             SMG = hit.gameObject.GetComponent<Weapon>();
             SMG.Equip(GetComponent<Collider>(), gunAttachPoint);
-            
+
         }
 
         if (hit.collider.CompareTag("Banger") && weapon == null && banger == null && SMG == null)
@@ -303,16 +303,23 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         {
             string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "Victory" : "Game";
             SceneManager.LoadScene(sceneName);
-            
+
             Debug.Log("YOU WIN!!!");
         }
         Debug.Log(hit.gameObject);
 
-        if(hit.gameObject.CompareTag("Powerup"))
+        if (hit.gameObject.CompareTag("Powerup"))
         {
             Destroy(hit.gameObject);
             Debug.Log("PowerUp Hit!!");
         }
     }
-   
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Checkpoint"))
+        {
+           GameManager.Instance.SaveGame();
+            Debug.Log("Checkpoint Set!");
+        }
+    }
 }

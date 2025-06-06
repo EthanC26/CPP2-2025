@@ -11,14 +11,14 @@ public class GameManager : MonoBehaviour
 
     private LoadSaveManager saveManager;
 
-   // public event Action<Player> OnPlayerSpawned;
+    // public event Action<Player> OnPlayerSpawned;
     public event Action<int> OnLifeValueChanged;
 
     #region Game Properties
     [SerializeField] private int MaxLives = 10;
     private int _lives = 3;
-   
-    
+
+
     public int Lives
     {
         get => _lives;
@@ -30,11 +30,11 @@ public class GameManager : MonoBehaviour
                 return;
             }
 
-           if (_lives > value) DamageTaken();
+            if (_lives > value) DamageTaken();
 
             _lives = value;
 
-            if(_lives > MaxLives) _lives = MaxLives;
+            if (_lives > MaxLives) _lives = MaxLives;
 
             OnLifeValueChanged?.Invoke(_lives);
 
@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log($"Current Lives: {Lives}");
 
-        if(!_instance)
+        if (!_instance)
         {
             _instance = this;
             DontDestroyOnLoad(this);
@@ -71,10 +71,10 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(MaxLives <= 0) MaxLives = 10;
+        if (MaxLives <= 0) MaxLives = 10;
 
         saveManager = GetComponent<LoadSaveManager>();
-        if(_playerInstance == null)
+        if (_playerInstance == null)
         {
             _playerInstance = FindAnyObjectByType<Player>();
         }
@@ -114,9 +114,9 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if(SceneManager.GetActiveScene().name.Contains("Game"))
+        if (SceneManager.GetActiveScene().name.Contains("Game"))
         {
-            if(Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 if (CurrentMenuController.CurrentState.state == MenuStates.InGame)
                     CurrentMenuController.SetActiveState(MenuStates.Continue);
@@ -139,10 +139,10 @@ public class GameManager : MonoBehaviour
 
     void GameOver()
     {
-        if(Lives <= 0)
+        if (Lives <= 0)
         {
-           
-            
+
+
             string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "GameOver" : "Game";
             SceneManager.LoadScene(sceneName);
 
@@ -155,7 +155,7 @@ public class GameManager : MonoBehaviour
         Lives = 3;
     }
 
-   public void SaveGame()
+    public void SaveGame()
     {
         if (_playerInstance == null)
         {
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
                 return;
             }
         }
-      
+
 
         var data = new LoadSaveManager.GameStateData.DataTransform
         {
