@@ -13,6 +13,7 @@ public class BetterEnemy : MonoBehaviour
     public bool Chase = false;
     public bool Patrol = false;
 
+
     public int curHealth;
     public int maxHealth;
     public int baseHealth;
@@ -28,6 +29,7 @@ public class BetterEnemy : MonoBehaviour
     public Transform player;
     public EnemyState currentState;
 
+    AudioSource audioSource;
     Transform target;
     NavMeshAgent agent;
     Animator anim;
@@ -36,13 +38,17 @@ public class BetterEnemy : MonoBehaviour
     public int pathIndex = 1;
     public float distThreshold = 0.2f; // floating point math is inexact, this allows us to get close enough to the waypoint and move to the next one.
 
+    //enemy audio
+    public AudioClip DeathClip;
+    public AudioClip HitClip;
+
     public float elapsedTime = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
-        
+        audioSource = GetComponent<AudioSource>();
 
         baseHealth = 5;
         maxHealth = 10;
@@ -138,13 +144,15 @@ public class BetterEnemy : MonoBehaviour
 
     public void DamageTaken()
     {
-       
+        audioSource.PlayOneShot(HitClip);
         curHealth -= 1;
         anim.SetTrigger("Hit");
 
 
         if (curHealth <= 0)
         {
+            audioSource.PlayOneShot(DeathClip);
+
             agent.isStopped = true;
             anim.SetTrigger("Die");
             Destroy(gameObject, 3f);

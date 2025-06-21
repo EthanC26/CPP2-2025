@@ -1,8 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.PlayerSettings;
-using static UnityEngine.Rendering.DebugUI.Table;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -16,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     #region Game Properties
     [SerializeField] private int MaxLives = 10;
-    private int _lives = 3;
+    private int _lives = 5;
 
 
     public int Lives
@@ -30,7 +29,7 @@ public class GameManager : MonoBehaviour
                 return;
             }
 
-            if (_lives > value) DamageTaken();
+           // if (_lives > value) DamageTaken();
 
             _lives = value;
 
@@ -51,8 +50,6 @@ public class GameManager : MonoBehaviour
     #endregion
 
     private MenuController CurrentMenuController;
-    private Transform currentCheckpoint;
-
 
     public void SetMenuController(MenuController newMenuController) => CurrentMenuController = newMenuController;
 
@@ -136,7 +133,6 @@ public class GameManager : MonoBehaviour
         else
             CurrentMenuController.JumpBack();
     }
-
     void GameOver()
     {
         if (Lives <= 0)
@@ -152,7 +148,7 @@ public class GameManager : MonoBehaviour
                 CurrentMenuController.JumpBack();
         }
 
-        Lives = 3;
+        Lives = 5;
     }
 
     public void SaveGame()
