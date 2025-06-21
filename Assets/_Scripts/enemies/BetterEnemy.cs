@@ -140,8 +140,6 @@ public class BetterEnemy : MonoBehaviour
                 _player.PlayDeathSound();
             }
             
-           
-
             //this is using the player object Animator
             Animator playeranim = _player.GetComponentInChildren<Animator>();
             if (playeranim != null)

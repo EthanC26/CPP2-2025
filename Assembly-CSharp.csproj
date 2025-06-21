@@ -80,6 +80,8 @@
     <Compile Include="Assets\_Scripts\Utils\Projectile.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
     <Compile Include="Assets\_Scripts\Menus\ContinueMenu.cs" />
+    <Compile Include="Assets\_Scripts\Utils\EnemyProjectile.cs" />
+    <Compile Include="Assets\_Scripts\enemies\ShooterEnemy.cs" />
     <Compile Include="Assets\_Scripts\enemies\BetterEnemy.cs" />
     <Compile Include="Assets\_Scripts\Player.cs" />
     <Compile Include="Assets\_Scripts\Menus\PauseMenu.cs" />
