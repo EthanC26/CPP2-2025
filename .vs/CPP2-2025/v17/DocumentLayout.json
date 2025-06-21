@@ -3,64 +3,24 @@
   "WorkspaceRootPath": "C:\\school\\GitHub\\CPP2-2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\utils\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\shooterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\shooterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\utils\\enemyprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\enemyprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\utils\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\enemycontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\enemycontex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\continuemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\continuemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\singleton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\ingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\ingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\basemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\basemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,24 +39,52 @@
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\victorymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\pickups\\randompickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\weapons\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\utils\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\utils\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\ingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\ingame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\continuemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\continuemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\loadsavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\loadsavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|c:\\school\\github\\cpp2-2025\\assets\\_scripts\\enemies\\shooterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\shooterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\menus\\basemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\menus\\basemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F64D13B0-11A5-66DC-DD98-543C64588F7F}|CatSplatStudios.StateMachine.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\statemachine\\tests\\statemachinetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F64D13B0-11A5-66DC-DD98-543C64588F7F}|CatSplatStudios.StateMachine.csproj|solutionrelative:assets\\statemachine\\tests\\statemachinetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\utils\\enemyprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\enemyprojectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,45 +106,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 20,
               "Title": "EnemyProjectile.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\EnemyProjectile.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\EnemyProjectile.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\EnemyProjectile.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Utils\\EnemyProjectile.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwCcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T10:14:34.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 19,
               "Title": "ShooterEnemy.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\ShooterEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\ShooterEnemy.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\ShooterEnemy.cs",
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\ShooterEnemy.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAgwHcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAADwv3cAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T09:27:12.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "LoadSaveManager.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\LoadSaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\LoadSaveManager.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\LoadSaveManager.cs",
               "RelativeToolTip": "Assets\\_Scripts\\LoadSaveManager.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAkwF8AAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswF8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T04:28:14.345Z"
+              "WhenOpened": "2025-06-04T04:28:14.345Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\GameManager.cs",
@@ -169,142 +158,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "ContinueMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\ContinueMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\ContinueMenu.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\ContinueMenu.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\ContinueMenu.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwB8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:47:06.92Z"
+              "WhenOpened": "2025-06-04T02:47:06.92Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\PauseMenu.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\PauseMenu.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\PauseMenu.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T06:02:30.684Z"
+              "WhenOpened": "2025-05-17T06:02:30.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 14,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Player.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Player.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAADwv6oAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAF0BAAAAAAAAAAAzwKoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T04:40:09.432Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "InGame.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\InGame.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\InGame.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\InGame.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\InGame.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:41:43.326Z"
+              "WhenOpened": "2025-05-18T05:41:43.326Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Shoot.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Shoot.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Utils\\Shoot.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwCQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T22:05:31.682Z"
+              "WhenOpened": "2025-05-07T22:05:31.682Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Projectile.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Projectile.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Utils\\Projectile.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAIwGcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAAA5wGcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T21:11:56.139Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Weapons\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Weapons\\Weapon.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Weapons\\Weapon.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Weapons\\Weapon.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T01:20:50.412Z"
+              "WhenOpened": "2025-05-27T01:20:50.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "BetterEnemy.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAswBAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAowBAAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T01:36:25.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "StateMachineTest.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\StateMachine\\Tests\\StateMachineTest.cs",
-              "RelativeDocumentMoniker": "Assets\\StateMachine\\Tests\\StateMachineTest.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\StateMachine\\Tests\\StateMachineTest.cs",
-              "RelativeToolTip": "Assets\\StateMachine\\Tests\\StateMachineTest.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCkAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T02:15:29.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EnemyStateMachine.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:49:11.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EnemyContex.cs",
-              "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\EnemyContex.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\EnemyContex.cs",
-              "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\EnemyContex.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\enemies\\EnemyContex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:49:14.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "VictoryMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\VictoryMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\VictoryMenu.cs",
@@ -312,11 +270,12 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\VictoryMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:44:57.04Z"
+              "WhenOpened": "2025-05-17T05:44:57.04Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 7,
               "Title": "GameOverMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\GameOverMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\GameOverMenu.cs",
@@ -324,11 +283,12 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\GameOverMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:44:54.373Z"
+              "WhenOpened": "2025-05-17T05:44:54.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "CreditsMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\CreditsMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\CreditsMenu.cs",
@@ -336,11 +296,12 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\CreditsMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:33:38.986Z"
+              "WhenOpened": "2025-05-17T05:33:38.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 5,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\MainMenu.cs",
@@ -348,47 +309,51 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:26:57.792Z"
+              "WhenOpened": "2025-05-17T05:26:57.792Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "MenuController.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MenuController.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\MenuController.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\MenuController.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\MenuController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwAIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:15:56.938Z"
+              "WhenOpened": "2025-05-17T05:15:56.938Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 3,
               "Title": "BaseMenu.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\BaseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Menus\\BaseMenu.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Menus\\BaseMenu.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\BaseMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwAQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:08:34.68Z"
+              "WhenOpened": "2025-05-17T05:08:34.68Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "RotatePond.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Misc\\RotatePond.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Misc\\RotatePond.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Misc\\RotatePond.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Misc\\RotatePond.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:46:38.225Z"
+              "WhenOpened": "2025-05-17T03:46:38.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "Singleton.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Singleton.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Singleton.cs",
@@ -396,11 +361,12 @@
               "RelativeToolTip": "Assets\\_Scripts\\Singleton.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:07:52.482Z"
+              "WhenOpened": "2025-05-07T02:07:52.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 0,
               "Title": "randomPickup.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Pickups\\randomPickup.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Pickups\\randomPickup.cs",
@@ -408,7 +374,8 @@
               "RelativeToolTip": "Assets\\_Scripts\\Pickups\\randomPickup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T02:54:31.54Z"
+              "WhenOpened": "2025-05-14T02:54:31.54Z",
+              "EditorCaption": ""
             }
           ]
         }

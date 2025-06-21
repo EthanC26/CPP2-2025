@@ -52960,10 +52960,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7510298281815484555, guid: 1b021fe6e8ff04b4eb4054cdf66fddc6, type: 3}
-      propertyPath: MaxLives
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7510298281815484555, guid: 1b021fe6e8ff04b4eb4054cdf66fddc6, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 756563220}
