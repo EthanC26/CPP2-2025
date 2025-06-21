@@ -1,9 +1,9 @@
-using System;
-using Unity.VisualScripting;
+
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+
 
 public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 {
@@ -11,6 +11,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     CharacterController cc;
     Camera mainCam;
     Animator anim;
+    AudioSource audioSource;
 
     [Header("Collision Mask")]
     [SerializeField] private LayerMask collisionMask;
@@ -55,7 +56,12 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     public bool inView;
 
-
+    //player audio 
+    public AudioClip HitClip;
+    public AudioClip DeathClip;
+    public AudioClip ShootClip;
+    public AudioClip JumpClip;
+    public AudioClip CollectClip;
     //calculated based on our jump values - this is the Y velocity that we will apply
     private float gravity;
 
@@ -66,6 +72,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         shoot = GetComponentInChildren<Shoot>();
         if (!shoot)
         {
@@ -141,13 +148,14 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         {
             ShootAttack = true;
             elapsedTime = 0;
+            audioSource.PlayOneShot(ShootClip);
 
         }
         else if (banger)
         {
-
             ShootAttack = true;
             elapsedTime = 0;
+            audioSource.PlayOneShot(ShootClip);
         }
 
         else Debug.Log("No gun to shoot with");
@@ -251,7 +259,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
         if (isJumpPressed)
         {
-
+            audioSource.PlayOneShot(JumpClip);
             return initJumpVelocity;
 
         }
@@ -273,6 +281,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     {
         if (hit.collider.CompareTag("weapon") && weapon == null && SMG == null && banger == null)
         {
+            audioSource.PlayOneShot(CollectClip);
             weapon = hit.gameObject.GetComponent<Weapon>();
             weapon.Equip(GetComponent<Collider>(), weaponAttachPoint);
 
@@ -282,6 +291,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         {
             if (shoot != null)
             {
+                audioSource.PlayOneShot(CollectClip);
                 shoot.SetGun(Shoot.GunType.SMG);
             }
             SMG = hit.gameObject.GetComponent<Weapon>();
@@ -293,6 +303,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         {
             if (shoot != null)
             {
+                audioSource.PlayOneShot(CollectClip);
                 shoot.SetGun(Shoot.GunType.Banger);
             }
             banger = hit.gameObject.GetComponent<Weapon>();
@@ -316,10 +327,34 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Checkpoint"))
+        if (other.CompareTag("Checkpoint"))
         {
-           GameManager.Instance.SaveGame();
+            GameManager.Instance.SaveGame();
             Debug.Log("Checkpoint Set!");
         }
     }
-}
+
+    public void PlayHitSound()
+    {
+        if (audioSource != null && HitClip != null)
+        {
+            audioSource.PlayOneShot(HitClip);
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or HitClip is not set!");
+        }
+    }
+
+    public void PlayDeathSound()
+    {
+        if (audioSource != null && DeathClip != null)
+        {
+            audioSource.PlayOneShot(DeathClip);
+        }
+        else
+        {
+            Debug.LogWarning("AudioSource or DeathClip is not set!");
+        }
+    }
+}   

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 
 public class GameManager : MonoBehaviour
@@ -16,15 +17,15 @@ public class GameManager : MonoBehaviour
     #region Game Properties
     [SerializeField] private int MaxLives = 10;
     private int _lives = 5;
-
-
     public int Lives
     {
+
         get => _lives;
         set
         {
             if (value < 0)
             {
+
                 GameOver();
                 return;
             }
@@ -133,11 +134,12 @@ public class GameManager : MonoBehaviour
         else
             CurrentMenuController.JumpBack();
     }
+   
+
     void GameOver()
     {
         if (Lives <= 0)
         {
-
 
             string sceneName = (SceneManager.GetActiveScene().name.Contains("Game")) ? "GameOver" : "Game";
             SceneManager.LoadScene(sceneName);

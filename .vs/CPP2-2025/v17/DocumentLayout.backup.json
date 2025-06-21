@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\utils\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\utils\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemies\\betterenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3371922A-6D85-0094-2154-64581B7A1F04}|Assembly-CSharp.csproj|C:\\school\\GitHub\\CPP2-2025\\assets\\_scripts\\misc\\rotatepond.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,18 +118,17 @@
               "RelativeToolTip": "Assets\\_Scripts\\LoadSaveManager.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAkwF8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T04:28:14.345Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T04:28:14.345Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\GameManager.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\_Scripts\\GameManager.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAwwDQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAwwI0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-18T03:55:32.677Z",
               "EditorCaption": ""
@@ -144,8 +143,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\ContinueMenu.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwB8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T02:47:06.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T02:47:06.92Z"
             },
             {
               "$type": "Document",
@@ -157,8 +155,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\PauseMenu.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T06:02:30.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T06:02:30.684Z"
             },
             {
               "$type": "Document",
@@ -168,7 +165,7 @@
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Player.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Player.cs",
-              "ViewState": "AgIAAAQBAAAAAAAAAAAmwAIAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADgBAAAAAAAAAAAswDEBAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-06T04:40:09.432Z",
               "EditorCaption": ""
@@ -183,12 +180,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\InGame.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T05:41:43.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T05:41:43.326Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Shoot.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Shoot.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Shoot.cs",
@@ -196,12 +192,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\Utils\\Shoot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T22:05:31.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T22:05:31.682Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Utils\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Utils\\Projectile.cs",
@@ -209,12 +204,11 @@
               "RelativeToolTip": "Assets\\_Scripts\\Utils\\Projectile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T21:11:56.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T21:11:56.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\Weapons\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Weapons\\Weapon.cs",
@@ -222,18 +216,17 @@
               "RelativeToolTip": "Assets\\_Scripts\\Weapons\\Weapon.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T01:20:50.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T01:20:50.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "BetterEnemy.cs",
               "DocumentMoniker": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
               "ToolTip": "C:\\school\\GitHub\\CPP2-2025\\Assets\\_Scripts\\enemies\\BetterEnemy.cs",
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\BetterEnemy.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAqwB8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAUwIQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T01:36:25.943Z",
               "EditorCaption": ""
@@ -260,8 +253,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\EnemyStateMachine.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:49:11.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T03:49:11.511Z"
             },
             {
               "$type": "Document",
@@ -273,8 +265,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\enemies\\EnemyContex.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:49:14.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T03:49:14.373Z"
             },
             {
               "$type": "Document",
@@ -286,8 +277,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\VictoryMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:44:57.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T05:44:57.04Z"
             },
             {
               "$type": "Document",
@@ -299,8 +289,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\GameOverMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:44:54.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T05:44:54.373Z"
             },
             {
               "$type": "Document",
@@ -312,8 +301,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\CreditsMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:33:38.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T05:33:38.986Z"
             },
             {
               "$type": "Document",
@@ -325,8 +313,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Menus\\MainMenu.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T05:26:57.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T05:26:57.792Z"
             },
             {
               "$type": "Document",
@@ -362,8 +349,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Misc\\RotatePond.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T03:46:38.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T03:46:38.225Z"
             },
             {
               "$type": "Document",
@@ -375,8 +361,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Singleton.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T02:07:52.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T02:07:52.482Z"
             },
             {
               "$type": "Document",
@@ -388,8 +373,7 @@
               "RelativeToolTip": "Assets\\_Scripts\\Pickups\\randomPickup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T02:54:31.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-14T02:54:31.54Z"
             }
           ]
         }

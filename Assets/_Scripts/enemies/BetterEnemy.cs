@@ -130,7 +130,17 @@ public class BetterEnemy : MonoBehaviour
         }
         if(other.gameObject.CompareTag("player"))
         {
+            
             GameManager.Instance.Lives--;
+
+            _player.PlayHitSound();
+
+            if (GameManager.Instance.Lives <= 0)
+            {
+                _player.PlayDeathSound();
+            }
+            
+           
 
             //this is using the player object Animator
             Animator playeranim = _player.GetComponentInChildren<Animator>();
