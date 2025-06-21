@@ -169,8 +169,6 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         anim.SetBool("unarmedAttack", uAttack);
         anim.SetBool("Attack", attack);
         anim.SetBool("Shooting", ShootAttack);
-
-
         Vector2 groundVel = new Vector2(velocity.x, velocity.z);
         anim.SetFloat("vel", groundVel.magnitude);
 
@@ -336,6 +334,8 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
 
     public void PlayHitSound()
     {
+        
+
         if (audioSource != null && HitClip != null)
         {
             audioSource.PlayOneShot(HitClip);
@@ -346,6 +346,7 @@ public class Player : MonoBehaviour, ProjectActions.IOverworldActions
         }
     }
 
+    
     public void PlayDeathSound()
     {
         if (audioSource != null && DeathClip != null)
