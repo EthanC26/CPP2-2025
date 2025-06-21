@@ -34,6 +34,16 @@ public class Projectile : MonoBehaviour
                 Debug.Log("shot enemy");
             }
         }
+        if (gameObject.CompareTag("pProj") && other.gameObject.CompareTag("TEnemy"))
+        {
+            ShooterEnemy se = other.gameObject.GetComponentInChildren<ShooterEnemy>();
+            if (se != null)
+            {
+                se.DamageTaken();
+                Destroy(gameObject);
+                Debug.Log("Turret shot enemy");
+            }
+        }
         if (gameObject.CompareTag("eProj") && other.gameObject.CompareTag("enemy"))
         {
             NavMeshAgent agent = other.gameObject.GetComponent<NavMeshAgent>();
@@ -61,6 +71,37 @@ public class Projectile : MonoBehaviour
                 }
                 Destroy(gameObject);
                 Debug.Log("shot enemy");
+            }
+
+        }
+
+        if (gameObject.CompareTag("eProj") && other.gameObject.CompareTag("TEnemy"))
+        {
+            NavMeshAgent agent = other.gameObject.GetComponent<NavMeshAgent>();
+            ShooterEnemy se = other.gameObject.GetComponentInChildren<ShooterEnemy>();
+            if (se != null)
+            {
+                if (agent == null)
+                {
+                    Debug.LogWarning("turret Enemy does not have a Rigidbody component, cannot apply force.");
+                }
+                se.DamageTaken();
+                if (agent != null)
+                {
+                    Vector3 pushDirection = transform.forward;
+
+                    float pushForce = 6.0f; // Adjust this value as needed
+
+                    agent.isStopped = true;//stops the navmesh agent from moving
+
+                    agent.Move(pushDirection * pushForce);
+
+                    StartCoroutine(ResumeAgent(agent, 1.0f)); // Resume movement after a short delay
+
+                    Debug.Log("Pushed turret enemy with projectile");
+                }
+                Destroy(gameObject);
+                Debug.Log("shot turret enemy");
             }
 
         }

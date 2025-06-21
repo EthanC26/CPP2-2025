@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -7,6 +8,11 @@ public class ShooterEnemy : MonoBehaviour
     {
         shoot, Patrol
     }
+
+    public int curHealth;
+    public int maxHealth;
+    public int baseHealth;
+    public event Action<int> OnHealthChanged;
 
     public EnemyState currentState;
     public Transform player; // Target to follow
@@ -25,6 +31,9 @@ public class ShooterEnemy : MonoBehaviour
 
     AudioSource audioSource; // Audio source for sound effects
     public AudioClip shootSound; // Sound to play when shooting
+    public AudioClip HitClip; // Sound to play when hit
+    public AudioClip DeathClip; // Sound to play when dying
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -94,5 +103,37 @@ public class ShooterEnemy : MonoBehaviour
         leftOffSet.y = 0; // Keep the y component zero to avoid tilting up or down
 
         transform.rotation = Quaternion.LookRotation(leftOffSet);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Player _player = other.GetComponent<Player>();
+            if (_player != null)
+            {
+                _player.PlayHitSound();
+            }
+            GameManager.Instance.Lives -= 1; // Reduce player health by 1
+        }
+    }
+    public void DamageTaken()
+    {
+        audioSource.PlayOneShot(HitClip);
+        curHealth -= 1;
+        anim.SetTrigger("Hit");
+
+
+        if (curHealth <= 0)
+        {
+            audioSource.PlayOneShot(DeathClip);
+
+            agent.isStopped = true;
+            anim.SetTrigger("Die");
+            Destroy(gameObject, 3f);
+
+        }
+
+        OnHealthChanged?.Invoke(curHealth);
     }
 }

@@ -17,6 +17,7 @@ TagManager:
   - SMG
   - Banger
   - Checkpoint
+  - TEnemy
   layers:
   - Default
   - TransparentFX
